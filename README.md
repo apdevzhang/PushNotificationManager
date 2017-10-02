@@ -1,7 +1,8 @@
-# PushNotificationManager &copy;*BANAYAN*
+# PushNotificationManager 
 ![License](https://img.shields.io/badge/License-MIT-orange.svg)&nbsp;
 ![Platform](https://img.shields.io/badge/Platform-iOS-yellowgreen.svg)&nbsp;
 ![Support](https://img.shields.io/badge/Support-iOS%208%2B-lightgrey.svg)&nbsp;
+![Cocoapods](https://img.shields.io/badge/cocoapods-support-red.svg)&nbsp;
 
 &emsp;&emsp;Convenient and comprehensive api for push notification ,provide 6 stems and 20 branchs' function,offer examples written by Objective-C and Swift respectively<br/>
  1. push notification style of normal
@@ -199,6 +200,6 @@
 
 
 
-[1]: https://github.com/GREENBANYAN/LocalNotificationManager/master/LICENSE "MIT License"
+[1]: https://github.com/GREENBANYAN/PushNotificationManager/blob/master/LICENSE "MIT License"
 [2]: http://www.jianshu.com/p/e607046d6515 "简书"
 

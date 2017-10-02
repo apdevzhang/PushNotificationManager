@@ -1,0 +1,56 @@
+/* 
+  Localizable.strings
+  PushNotificationManagerExample-ObjC
+
+  Created by BANYAN on 2017/9/27.
+  Copyright © 2017年 GREENBANYAN. All rights reserved.
+*/
+
+"推送示例" = "Push Notification Example";
+
+"普通推送" = "Normal Push Notification";
+"普通推送,自定义提示音" = "Normal Push Notification with Customized Alert Sound";
+
+"图像推送" = "Graphics Push Notification";
+"图像推送,自定义提示音" = "Graphics Push Notification with Customized Alert Sound";
+"图像推送,下载方式" = "Graphics Push Notification(download)";
+"图像推送,下载方式,自定义提示音" = "Graphics Push Notification(download) with Customized Alert Sound";
+
+"视频推送" = "Video Push Notification";
+"视频推送,自定义提示音" = "Video Push Notification with Customized Alert Sound";
+"视频推送,下载方式" = "Video Push Notification(download)";
+"视频推送,下载方式,自定义提示音" = "Video Push Notification(download) with Customized Alert Sound";
+
+"定时推送" = "Timing Push Notification";
+"定时推送,自定义提示音" = "Timing Push Notification with Customized Alert Sound";
+"指定时间" = "Appointed Push Notification";
+"指定时间,自定义提示音" = "Appointed Push Notification with Customized Alert Sound";
+"定时推送,字典方式" = "Timing Push Notification(download/dictionary)";
+"定时推送,字典方式,自定义提示音" = "Timing Push Notification(download/dictionary) with Customized Alert Sound";
+
+"交互推送" = "Interactive Push Notification";
+"交互推送,自定义提示音" = "Interactive Push Notification with Customized Alert Sound";
+
+"定点推送" = "Location Push Notification";
+"定点推送,自定义提示音" = "Location Push Notification with Customized Alert Sound";
+
+
+
+"普通类型" = "PushNotificationStyleNormal";
+"图像类型" = "PushNotificationStyleGraphics";
+"视频类型" = "PushNotificationStyleVideo";
+"定时类型" = "PushNotificationStyleTiming";
+"交互类型" = "PushNotificationStyleInteractive";
+"定点类型" = "PushNotificationStyleLocation";
+
+"推送将在3秒后执行" = "Execution after 3 second...";
+"推送将在5秒后执行" = "Execution after 5 second...";
+
+
+"评论" = "Reply";
+"发送" = "Send";
+"说点什么" = "Write something...";
+"进入" = "Enter";
+"销毁" = "Do nothing";
+
+

@@ -1,0 +1,24 @@
+PODS:
+  - HexColors (2.2.1)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - pop (1.0.10)
+  - TSMessages (0.9.12):
+    - HexColors (~> 2.2.0)
+
+DEPENDENCIES:
+  - Masonry
+  - MBProgressHUD
+  - pop
+  - TSMessages
+
+SPEC CHECKSUMS:
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
+
+PODFILE CHECKSUM: 2765c204c4c87ffb9dc4c6775f1449daa71c5633
+
+COCOAPODS: 1.2.0.beta.1

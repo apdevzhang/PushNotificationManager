@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  PushNotificationManagerExample-ObjC
+
+  Created by BANYAN on 2017/9/27.
+  Copyright © 2017年 GREENBANYAN. All rights reserved.
+*/
+
+// 应用名称
+CFBundleDisplayName = "推送示例";
+
+// Authority
+NSLocationWhenInUseUsageDescription = "需要您的同意,才能在使用期间访问位置";
+NSLocationUsageDescription = "需要您的同意,才能访问位置";
+NSLocationAlwaysUsageDescription = "需要您的同意,才能始终访问位置";

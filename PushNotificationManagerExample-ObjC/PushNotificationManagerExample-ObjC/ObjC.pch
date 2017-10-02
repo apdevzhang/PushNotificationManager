@@ -1,0 +1,37 @@
+//
+//  ObjC.pch
+//  PushNotificationManagerExample-ObjC
+//
+//  Created by BANYAN on 2017/10/1.
+//  Copyright © 2017年 GREENBANYAN. All rights reserved.
+//
+
+//
+//  PrefixHeader.pch
+//  BANYAN
+//
+//  Created by BANYAN on 2017/2/5.
+//  Copyright © 2017年 GREEN BANYAN. All rights reserved.
+//
+
+
+#import <Availability.h>
+
+#ifndef __IPHONE_8_0
+#warning "This project uses features only available in iOS SDK 8.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "Masonry.h"
+#import <MBProgressHUD.h>
+#import "UIColor+Hex.h"
+
+#import "PopTableViewCell.h"
+#import <pop/POP.h>
+
+#endif
+

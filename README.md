@@ -4,14 +4,15 @@
 ![Support](https://img.shields.io/badge/Support-iOS%208%2B-lightgrey.svg)&nbsp;
 
 &emsp;&emsp;Convenient and comprehensive api for push notification ,provide 6 stems and 20 branchs' function,offer examples written by Objective-C and Swift respectively<br/>
-&emsp;&emsp;the main functions showing in the below:<br/>
- - apply the push notification permission<br/>
- - push notification with normal style<br/>
- - push notification with graphics<br/>
- - push notification with video<br/>
- - push notification with a timing<br/>
- - push notification with a fixed point<br/>
- - push notification with interaction<br/>
+&emsp;&emsp;the functions are showing in the below:<br/>
+ 1. push notification style of normal
+   1. normal
+   2. provide a customized alert sound
+ 2. push notification style of graphics
+ 3. push notification style of video
+ 4. push notification style of timing
+ 5. push notification style of interactive
+ 6. push notification style of location
  
  ### Directory
  <pre>
@@ -139,3 +140,18 @@ placeholder
 
 [1]: https://github.com/GREENBANYAN/LocalNotificationManager/master/LICENSE "MIT License"
 [2]: http://www.jianshu.com/p/e607046d6515 "简书"
+[3]: https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E6%99%AE%E9%80%9A%E6%8E%A8%E9%80%81.PNG "普通推送"
+[4]: https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E9%A6%96%E9%A1%B51-%E4%B8%AD.PNG "首页1-中"
+[5]: https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E9%A6%96%E9%A1%B52-%E4%B8%AD.PNG "首页2-中"
+[6]: https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E9%A6%96%E9%A1%B51-%E8%8B%B1.PNG "首页1-英"
+[7]: https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E9%A6%96%E9%A1%B52-%E8%8B%B1.PNG "首页2-英"
+[8]: https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E9%A6%96%E9%A1%B53-%E4%B8%AD.PNG "首页3-中"
+[9]: https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E5%9B%BE%E7%89%87%E6%8E%A8%E9%80%81.PNG "图片推送"
+[10]: https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E5%9B%BE%E7%89%87%E6%8E%A8%E9%80%81-%E4%B8%8B%E8%BD%BD.PNG "图片推送-下载"
+[11] https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E8%A7%86%E9%A2%91%E6%8E%A8%E9%80%81.PNG "视频推送"
+[12] https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E8%A7%86%E9%A2%91%E6%8E%A8%E9%80%81-%E4%B8%8B%E8%BD%BD.PNG "视频推送-下载"
+[13] https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E4%BA%A4%E4%BA%92%E6%8E%A8%E9%80%81.PNG "交互推送1"
+[14] https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E4%BA%A4%E4%BA%92%E6%8E%A8%E9%80%811.PNG "交互推送2"
+[15] https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E4%BA%A4%E4%BA%92%E6%8E%A8%E9%80%812.PNG "交互推送3"
+[15]
+[16]

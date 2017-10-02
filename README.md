@@ -35,11 +35,11 @@
  -----|-----|-----|-----
  ![screenshot/screenshot1.png](screenshot/screenshot1.png) |  ![screenshot/screenshot2.png](screenshot/screenshot2.png) |  ![screenshot/screenshot3.png](screenshot/screenshot3.png) |  ![screenshot/screenshot4.png](screenshot/screenshot4.png)
  
-  push notification style of normal | push notification style of graphics | push notification style of video
-  -----|-----|-----
- ![screenshot/screenshot6.png](screenshot/screenshot6.png) |  ![screenshot/screenshot7.png](screenshot/screenshot7.png) |  ![screenshot/screenshot9.png](screenshot/screenshot9.png) 
+ push notification style of normal | push notification style of graphics | push notification style of video
+ -----|-----|-----
+![screenshot/screenshot6.png](screenshot/screenshot6.png) | ![screenshot/screenshot7.png](screenshot/screenshot7.png) | ![screenshot/screenshot9.png](screenshot/screenshot9.png) 
  
- interactive setp1 |  interactive setp2 |  interactive setp3
+ interactive setp1 | interactive setp2 | interactive setp3
  -----|-----|-----
  ![screenshot/screenshot11.png](screenshot/screenshot11.png) |  ![screenshot/screenshot12.png](screenshot/screenshot12.png) |  ![screenshot/screenshot13.png](screenshot/screenshot13.png)
  ### Directory
@@ -51,116 +51,149 @@
 `PushNotificationManager`use[__MIT license__][1]protocol
 ### Installation with cocoapods
 <pre>
- pod 'LocalNotificationManager'
+ pod 'PushNotificationManager'
 </pre>
 ### Examples:
- - make sure you install the`LocalNotificationManager`with cocoapods or import the files of`LocalNotificationManager`before use
+ - make sure you install the`PushNotificationManager`with cocoapods or import the files of`PushNotificationManager`before use
 #### Apply the push notification permission
 ```
-placeholder
+    if (kSystemVersion >= 10.0) {
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        center.delegate = self;
+        UNAuthorizationOptions types=UNAuthorizationOptionBadge|UNAuthorizationOptionAlert|UNAuthorizationOptionSound;
+        [center requestAuthorizationWithOptions:types completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            if (granted) {
+            [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
+                
+            }];
+            } else {
+            [[UIApplication sharedApplication]openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@""} completionHandler:^(BOOL success) { }];
+            }
+        }];
+    }else if (kSystemVersion >= 8.0){
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge categories:nil]];
+#pragma clang diagnostic pop
+    }
 ```
-#### Local notification with normal style
+#### `push notification style of normal` ->`普通推送`
 ```
-placeholder
+-(void)normalPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
 ```
-#### Local notification with image
+#### `push notification style of normal,provide a customized alert sound,e.g. @"intro.mp3"` ->`普通推送,可设置自定义提示音`
 ```
-placeholder
+-(void)normalPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
 ```
-#### local notification with video
+#### `push notification style of graphics,include the format of png、jpg、gif and other graphics formats` ->`图像推送,包含png、jpg、gif等图像格式`
 ```
-placeholder
+-(void)graphicsPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fileName:(NSString *)fileName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
 ```
-#### Local notification with a timing
+#### `push notification style of graphics,provide a customized alert sound,e.g. @"intro.mp3"` ->`图像推送,可设置自定义提示音`
 ```
-placeholder
+-(void)graphicsPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fileName:(NSString *)fileName soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
 ```
 
-#### Local notification with a fixed point
+#### `push notification style of graphics,provide a graphics download from internet` ->`图像推送,可以通过链接下载`
 ```
-placeholder
-```
-
-#### Local notification with interaction
-```
-placeholder
+-(void)graphicsPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier urlString:(NSString *)urlString timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
 ```
 
-#### The callback function of local notification
+####`push notification style of graphics,provide a graphics download from internet and a customized alert sound,e.g. @"intro.mp3"` ->`图像推送,可以通过链接下载,可设置自定义提示音`
 ```
-placeholder
+-(void)graphicsPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier urlString:(NSString *)urlString soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of video` ->`视频推送`
+```
+-(void)videoPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fileName:(NSString *)fileName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of video,provide a customized alert sound,e.g. @"intro.mp3"` ->`视频推送,可设置自定义提示音`
+```
+-(void)videoPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fileName:(NSString *)fileName soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of video,provide a video download from internet` ->`视频推送,可以通过链接下载`
+```
+-(void)videoPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier urlString:(NSString *)urlString timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of video,provide a video download from internet and a customized alert sound,e.g. @"intro.mp3"`` ->`视频推送,可以通过链接下载,可设置自定义提示音`
+```
+-(void)videoPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier urlString:(NSString *)urlString soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of timing` ->`定时推送`
+```
+-(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier weekday:(NSString *)weekday hour:(NSString *)hour minute:(NSString *)minute second:(NSString *)second timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of timing,provide a customized alert sound,e.g. @"intro.mp3"` ->`定时推送,可设置自定义提示音`
+```
+-(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier weekday:(NSString *)weekday hour:(NSString *)hour minute:(NSString *)minute second:(NSString *)second soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of timing(ex.2017-10-1 5:12)` ->`定时推送(行如2017-10-1 5:12)`
+```
+-(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier year:(NSString *)year month:(NSString *)month day:(NSString *)day hour:(NSString *)hour minute:(NSString *)minute second:(NSString *)second timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of timing(ex.2017-10-1 5:12),provide a customized alert sound,e.g. @"intro.mp3"` ->`定时推送,可设置自定义提示音(行如2017-10-1 5:12)`
+```
+-(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier year:(NSString *)year month:(NSString *)month day:(NSString *)day hour:(NSString *)hour minute:(NSString *)minute second:(NSString *)second soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+```
+//    NSDictionary *dict = @{@"weekday":@1, //the `1` said Sunday in China ->`1`等于中国周日
+//                           @"hour":@2,
+//                           @"minute":@20,
+//                           @"second":@10
+//                           }; // this meaning the fire date is "2:20:10 Sunday" ->字典的内容表示"周日 2:20:10"
+```
+#### `push notification style of timing,the fire date is included in a dictionary,the fireDate usage is as follows` ->`定时推送,推送时间包含在字典内,字典使用方法如下`
+```
+-(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fireDate:(NSDictionary *)fireDate timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;   // the fire date include the properities,such as era,year,month,day,hour,minute,second,nanosecond,weekday,weekdayOrdinal,quarter,weekOfMonth,weekOfYear,yearForWeekOfYear
+```
+
+#### `push notification style of timing,the fire date is included in a dictionary,provide a customized alert sound,e.g. @"intro.mp3"` ->`定时推送,推送时间包含在字典内,可设置自定义提示音`
+```
+-(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fireDate:(NSDictionary *)fireDate soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of interactive` ->`交互推送`
+```
+-(void)interactivePushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier identifierArray:(NSArray<NSString *> *)identifierArray actionArray:(NSArray<UNNotificationAction *> *)actionArray timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of interactive,provide a customized alert sound,e.g. @"intro.mp3"` ->`交互推送,可设置自定义提示音`
+```
+-(void)interactivePushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier identifierArray:(NSArray<NSString *> *)identifierArray actionArray:(NSArray<UNNotificationAction *> *)actionArray soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+```
+
+#### `push notification style of location` ->`定点推送`
+```
+-(void)locationPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier longitude:(CGFloat)longitude latitude:(CGFloat)latitude radius:(NSInteger)radius notifyOnEntry:(BOOL)notifyOnEntey ontifyOnExit:(BOOL)notifyOnExit repeat:(BOOL)repeat;
+```
+
+#### `push notification style of location,provide a customized alert sound,e.g. @"intro.mp3"` ->`定点推送,可设置自定义提示音`
+```
+-(void)locationPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier longitude:(CGFloat)longitude latitude:(CGFloat)latitude radius:(NSInteger)radius notifyOnEntry:(BOOL)notifyOnEntey ontifyOnExit:(BOOL)notifyOnExit soundName:(NSString *)soundName repeat:(BOOL)repeat;
+```
+
+#### `Receives the push notification in the foreground`->`前台收到推送`
+```
+// you can see the detail in the project named `PushNotificationManagerExample-ObjC`
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{}
+```
+
+#### `Receives the push notification in the background`->`应用在后台收到推送的处理方法`
+```
+// you can see the detail in the project named `PushNotificationManagerExample-ObjC`
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler{}
 ```
 <hr>
  
-&emsp;&emsp;对iOS设备（iOS8之前及iOS8和iOS10新特性）实现本地推送的封裝，方便统一管理及使用，包括设备授权、多种样式的本地推送和前台接收本地推送的回调函数等多种特性，主要功能如下:
- - 申请设备推送权限
- - 普通样式推送
- - 图片样式推送
- - 视频样式推送
- - 定时推送
- - 定点推送 
- - 交互推送
- - 前台接收推送的回调函数
- 
-### 目录
-<pre>
-                              |—— placeholder  
-                              |—— placeholder  
-                              |—— placeholder  
-  LocalNotificationManager    |—— placeholder  
-                              |—— placeholder  
-                              |—— placeholder  
-                              |—— placeholder 
-</pre>
-
-### 使用许可
-`NSNetworkManager`使用[__MIT license__][1]协议
-### 使用CocoaPods安装
-<pre>
- pod 'LocalNotificationManager'
-</pre>
-### 使用示例:
- - 使用前确保cocoapods安装`LocalNotificationManager`或导入`LocalNotificationManager`文件夹
-
-#### 申请设备推送权限
-```
-placeholder
-```
-
-#### 普通样式推送
-```
-placeholder
-```
-
-#### 图片样式推送
-```
-placeholder
-```
-
-#### 视频样式推送
-```
-placeholder
-```
-
-#### 定时推送
-```
-placeholder
-```
-
-#### 定点推送
-```
-placeholder
-```
-
-#### 交互推送
-```
-placeholder
-```
-
-#### 前台接收推送的回调函数
-```
-placeholder
-```
 
 ### [__简书__][2]
 

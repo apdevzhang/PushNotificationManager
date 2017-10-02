@@ -55,7 +55,7 @@
  PushNotification.m
 </pre>
 ### License
-`PushNotificationManager`use[__MIT license__][1]protocol
+`PushNotificationManager`use [__MIT license__][1]
 ### Installation with cocoapods
 <pre>
  pod 'PushNotificationManager'

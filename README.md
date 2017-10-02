@@ -31,17 +31,17 @@
     - normal with default alert sound
     - provide a customized alert sound
  ### Preview
- mainpage screenshot1  | mainpage screenshot2 | Chinese1 | Chinese2
+ mainpage screenshot1  | mainpage screenshot2 | mainpage screenshot3 | mainpage screenshot4
  -----|-----|-----|-----
- ![screenshots/screenshot1.png](screenshots/screenshot1.png) |  ![screenshots/screenshot2.png](screenshots/screenshot2.png) |  ![screenshots/screenshot3.png](screenshots/screenshot3.png) |  ![screenshots/screenshot4.png](screenshots/screenshot4.png)
+ ![screenshot/screenshot1.png](screenshot/screenshot1.png) |  ![screenshot/screenshot2.png](screenshot/screenshot2.png) |  ![screenshot/screenshot3.png](screenshot/screenshot3.png) |  ![screenshot/screenshot4.png](screenshot/screenshot4.png)
  
   push notification style of normal | push notification style of graphics | push notification style of video
   -----|-----|-----
- ![screenshots/screenshot6.png](screenshots/screenshot6.png) |  ![screenshots/screenshot7.png](screenshots/screenshot7.png) |  ![screenshots/screenshot9.png](screenshots/screenshot9.png) 
+ ![screenshot/screenshot6.png](screenshot/screenshot6.png) |  ![screenshot/screenshot7.png](screenshot/screenshot7.png) |  ![screenshot/screenshot9.png](screenshot/screenshot9.png) 
  
  interactive setp1 |  interactive setp2 |  interactive setp3
  -----|-----|-----
- ![screenshots/screenshot11.png](screenshots/screenshot11.png) |  ![screenshots/screenshot12.png](screenshots/screenshot12.png) |  ![screenshots/screenshot13.png](screenshots/screenshot13.png)
+ ![screenshot/screenshot11.png](screenshots/screenshot11.png) |  ![screenshot/screenshot12.png](screenshot/screenshot12.png) |  ![screenshot/screenshot13.png](screenshots/screenshot13.png)
  ### Directory
  <pre>
  PushNotification.h

@@ -1,31 +1,25 @@
-# LocalNotificationManager &copy;*GREENBANAYAN*
+# PushNotificationManager &copy;*BANAYAN*
 ![License](https://img.shields.io/badge/License-MIT-orange.svg)&nbsp;
 ![Platform](https://img.shields.io/badge/Platform-iOS-yellowgreen.svg)&nbsp;
 ![Support](https://img.shields.io/badge/Support-iOS%208%2B-lightgrey.svg)&nbsp;
 
-&emsp;&emsp;package the iOS device（iOS8before with iOS8 and iOS10,includs new features）with local notification for the convenience of use or manage,this kit include device authorization,support varieties of local notification style,such as normal、image、video、timing and so on,also include the callback function of local notification.<br/>
-&emsp;&emsp;the main functions are as follows:
- - apply the push notification permission
- - local notification with normal style 
- - local notification with graphics
- - local notification with video
- - local notification with a timing
- - local notification with a fixed point
- - local notification with interaction
- - the callback function of local notification
+&emsp;&emsp;Convenient and comprehensive api for push notification ,provide 6 stems and 20 branchs' function,offer examples written by Objective-C and Swift respectively<br/>
+&emsp;&emsp;the main functions showing in the below:<br/>
+ - apply the push notification permission<br/>
+ - push notification with normal style<br/>
+ - push notification with graphics<br/>
+ - push notification with video<br/>
+ - push notification with a timing<br/>
+ - push notification with a fixed point<br/>
+ - push notification with interaction<br/>
  
  ### Directory
  <pre>
-                              |—— placeholder  
-                              |—— placeholder  
-                              |—— placeholder  
-  LocalNotificationManager    |—— placeholder  
-                              |—— placeholder  
-                              |—— placeholder  
-                              |—— placeholder 
+ PushNotification.h
+ PushNotification.m
 </pre>
 ### License
-`NSNetworkManager`use[__MIT license__][1]protocol
+`PushNotificationManager`use[__MIT license__][1]protocol
 ### Installation with cocoapods
 <pre>
  pod 'LocalNotificationManager'

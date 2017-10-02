@@ -10,6 +10,6 @@ Convenient and comprehensive api for push notification,provide 6 stems and 20 br
   s.author             = { "GREENBANYAN" => "@greenbanyan@163.com" }
   s.platform     = :ios,'8.0'
   s.source       = { :git => "https://github.com/GREENBANYAN/PushNotificationManager", :tag => "#{s.version}" }
-  s.source_files  = "PushNotificationManager/*.{h,m}"
+  s.source_files  = "PushNotificationManager/PushNotificationManager/*.{h,m}"
   s.requires_arc = true
 end

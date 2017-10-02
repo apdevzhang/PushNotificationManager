@@ -44,8 +44,12 @@
  
  interactive setp1 | interactive setp2 | interactive setp3
  -----|-----|-----
- ![screenshot/screenshot11.png](screenshot/screenshot11.png) |  ![screenshot/screenshot12.png](screenshot/screenshot12.png) |  ![screenshot/screenshot13.png](screenshot/screenshot13.png)
- ### Directory
+ ![screenshot/screenshot11.png](screenshot/screenshot11.png) | ![screenshot/screenshot12.png](screenshot/screenshot12.png) |  ![screenshot/screenshot13.png](screenshot/screenshot13.png)
+ 
+  interactive gif | video gif 
+ -----|-----
+  ![screenshot/gif1.gif](screenshot/gif1.gif) | ![screenshot/gif2.gif](screenshot/gif2.gif) 
+ ### Core
  <pre>
  PushNotification.h
  PushNotification.m

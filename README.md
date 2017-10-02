@@ -3,6 +3,8 @@
 ![Platform](https://img.shields.io/badge/Platform-iOS-yellowgreen.svg)&nbsp;
 ![Support](https://img.shields.io/badge/Support-iOS%208%2B-lightgrey.svg)&nbsp;
 ![Cocoapods](https://img.shields.io/badge/cocoapods-support-red.svg)&nbsp;
+![Language](https://img.shields.io/badge/language-Objective--C-B9D3EE.svg)&nbsp;
+![Language](https://img.shields.io/badge/language-Swift-red.svg)&nbsp;
 
 &emsp;&emsp;Convenient and comprehensive api for push notification ,provide 6 stems and 20 branchs' function,offer examples written by Objective-C and Swift respectively<br/>
  1. push notification style of normal

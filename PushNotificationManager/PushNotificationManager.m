@@ -452,7 +452,7 @@ static PushNotificationManager *_instance = nil;
     [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
 }
 
-#pragma mark - `push notification style of timing,the fire date is included in a dictionary,the fireDate usage is as follows`->`定时推送,启动时间包含在字典内,字典使用方法如下`
+#pragma mark - `push notification style of timing,the fire date is included in a dictionary`->`定时推送,启动时间包含在字典内`
 -(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fireDate:(NSDictionary *)fireDate timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat
 {
     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];

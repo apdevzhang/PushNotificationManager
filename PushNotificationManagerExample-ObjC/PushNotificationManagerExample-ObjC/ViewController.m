@@ -331,7 +331,7 @@
     [hud hideAnimated:YES afterDelay:delay];
 }
 
-#pragma mark - 前台收到推送->`Receives the push notification in the foreground`
+#pragma mark - `Receives the push notification in the foreground`->`前台收到推送`
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler
 {
     NSString *identifier = notification.request.identifier;
@@ -350,7 +350,7 @@
     }
     completionHandler(UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound|UNNotificationPresentationOptionAlert);
 }
-#pragma mark - 应用在后台收到推送的处理方法->`Receives the push notification in the background`
+#pragma mark - `Receives the push notification in the background`->`应用在后台收到推送的处理方法`
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler
 {
 //   NSDictionary * userInfo = response.notification.request.content.userInfo;

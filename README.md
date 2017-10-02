@@ -4,16 +4,34 @@
 ![Support](https://img.shields.io/badge/Support-iOS%208%2B-lightgrey.svg)&nbsp;
 
 &emsp;&emsp;Convenient and comprehensive api for push notification ,provide 6 stems and 20 branchs' function,offer examples written by Objective-C and Swift respectively<br/>
-&emsp;&emsp;the functions are showing in the below:<br/>
  1. push notification style of normal
-   1. normal
-   2. provide a customized alert sound
+    - normal with default alert sound
+    - provide a customized alert sound
  2. push notification style of graphics
+    - normal with default alert sound
+    - provide a customized alert sound
+    - provide a graphics download from internet
+    - provide a graphics download from internet and a customized alert sound
  3. push notification style of video
- 4. push notification style of timing
- 5. push notification style of interactive
+    - normal with default alert sound
+    - provide a customized alert sound
+    - provide a video download from internet
+    - provide a video download from internet and a customized alert sound
+ 4. push notification style of timing(Chinses Time)
+    - normal with default alert sound(weekday、hour、minute、second)
+    - provide a customized alert sound(weekday、hour、minute、second)
+    - push notification style of timing like `2017-10-1`(year、month、day、hour、minute、second)
+    - push notification style of timing like `2017-10-1`(year、month、day、hour、minute、second) and a customized alert sound
+    - push notification style of timing,the fire date is included in a dictionary
+    - push notification style of timing,the fire date is included in a dictionary,provide a customized alert sound
+ 5. push notification style of interactive(the max action is four)
+    - normal with default alert sound
+    - provide a customized alert sound
  6. push notification style of location
- 
+    - normal with default alert sound
+    - provide a customized alert sound
+ ### Preview
+ ![__homepage__][6] | ![__homepage__][7] | ![__首页__][4] | ![__首页__][5]
  ### Directory
  <pre>
  PushNotification.h
@@ -153,5 +171,3 @@ placeholder
 [13] https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E4%BA%A4%E4%BA%92%E6%8E%A8%E9%80%81.PNG "交互推送1"
 [14] https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E4%BA%A4%E4%BA%92%E6%8E%A8%E9%80%811.PNG "交互推送2"
 [15] https://github.com/GREENBANYAN/PushNotificationManager/blob/master/screenshot/%E4%BA%A4%E4%BA%92%E6%8E%A8%E9%80%812.PNG "交互推送3"
-[15]
-[16]

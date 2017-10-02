@@ -106,7 +106,7 @@
 -(void)graphicsPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier urlString:(NSString *)urlString timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
 ```
 
-####`push notification style of graphics,provide a graphics download from internet and a customized alert sound,e.g. @"intro.mp3"` ->`图像推送,可以通过链接下载,可设置自定义提示音`
+#### `push notification style of graphics,provide a graphics download from internet and a customized alert sound,e.g. @"intro.mp3"` ->`图像推送,可以通过链接下载,可设置自定义提示音`
 ```
 -(void)graphicsPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier urlString:(NSString *)urlString soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
 ```

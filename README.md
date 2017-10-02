@@ -51,8 +51,8 @@
   ![screenshot/gif1.gif](screenshot/gif1.gif) | ![screenshot/gif2.gif](screenshot/gif2.gif) 
  ### Core
  <pre>
- PushNotification.h
- PushNotification.m
+ PushNotificationManager.h
+ PushNotificationManager.m
 </pre>
 ### License
 `PushNotificationManager`use [__MIT license__][1]

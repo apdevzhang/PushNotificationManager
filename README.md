@@ -41,7 +41,7 @@
  
  interactive setp1 |  interactive setp2 |  interactive setp3
  -----|-----|-----
- ![screenshot/screenshot11.png](screenshots/screenshot11.png) |  ![screenshot/screenshot12.png](screenshot/screenshot12.png) |  ![screenshot/screenshot13.png](screenshots/screenshot13.png)
+ ![screenshot/screenshot11.png](screenshot/screenshot11.png) |  ![screenshot/screenshot12.png](screenshot/screenshot12.png) |  ![screenshot/screenshot13.png](screenshot/screenshot13.png)
  ### Directory
  <pre>
  PushNotification.h

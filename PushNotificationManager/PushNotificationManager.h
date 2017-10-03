@@ -34,7 +34,6 @@
 #define DLog(FORMAT, ...) nil
 #endif
 
-
 @interface PushNotificationManager : NSObject
 +(instancetype)sharedInstance;
 

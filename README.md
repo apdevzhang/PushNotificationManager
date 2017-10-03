@@ -311,7 +311,7 @@
 <hr>
  
 
-### [__View Chinese translation_][2]
+### [_View Chinese translation_][2]
 
 
 

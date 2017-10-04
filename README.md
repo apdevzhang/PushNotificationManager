@@ -88,7 +88,12 @@
 #### push notification style of normal
  - function
 ```
--(void)normalPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)normalPushNotificationWithTitle:(NSString *)title 
+                              subTitle:(NSString *)subTitle  
+                                  body:(NSString *)body 
+                            identifier:(NSString *)identifier 
+                          timeInterval:(NSInteger)timeInterval 
+                                repeat:(BOOL)repeat;
 ```
 - usage
 ```
@@ -98,7 +103,13 @@
 #### push notification style of normal,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
--(void)normalPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)normalPushNotificationWithTitle:(NSString *)title 
+                              subTitle:(NSString *)subTitle 
+                                  body:(NSString *)body 
+                            identifier:(NSString *)identifier 
+                             soundName:(NSString *)soundName 
+                          timeInterval:(NSInteger)timeInterval 
+                                repeat:(BOOL)repeat;
 ```
  - usage
  ```
@@ -108,7 +119,13 @@
 #### push notification style of graphics,include the format of png、jpg、gif and other graphics formats
  - function
 ```
--(void)graphicsPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fileName:(NSString *)fileName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)graphicsPushNotificationWithTitle:(NSString *)title
+                                subTitle:(NSString *)subTitle 
+                                    body:(NSString *)body 
+                              identifier:(NSString *)identifier 
+                                fileName:(NSString *)fileName 
+                            timeInterval:(NSInteger)timeInterval 
+                                  repeat:(BOOL)repeat;
 ```
  - usage
  ```
@@ -118,7 +135,14 @@
 #### push notification style of graphics,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
--(void)graphicsPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fileName:(NSString *)fileName soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)graphicsPushNotificationWithTitle:(NSString *)title 
+                                subTitle:(NSString *)subTitle 
+                                    body:(NSString *)body 
+                              identifier:(NSString *)identifier 
+                                fileName:(NSString *)fileName 
+                               soundName:(NSString *)soundName 
+                            timeInterval:(NSInteger)timeInterval 
+                                  repeat:(BOOL)repeat;
 ```
  - usage
 ```
@@ -128,7 +152,13 @@
 #### push notification style of graphics,provide a graphics download from internet
  - function
 ```
--(void)graphicsPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier urlString:(NSString *)urlString timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)graphicsPushNotificationWithTitle:(NSString *)title 
+                                subTitle:(NSString *)subTitle
+                                    body:(NSString *)body 
+                              identifier:(NSString *)identifier 
+                               urlString:(NSString *)urlString
+                            timeInterval:(NSInteger)timeInterval 
+                                  repeat:(BOOL)repeat;
 ```
  - usage
  ```
@@ -137,7 +167,14 @@
 #### push notification style of graphics,provide a graphics download from internet and a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
--(void)graphicsPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier urlString:(NSString *)urlString soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)graphicsPushNotificationWithTitle:(NSString *)title 
+                                subTitle:(NSString *)subTitle
+                                    body:(NSString *)body 
+                              identifier:(NSString *)identifier 
+                               urlString:(NSString *)urlString 
+                               soundName:(NSString *)soundName 
+                            timeInterval:(NSInteger)timeInterval
+                                  repeat:(BOOL)repeat;
 ```
 - usage
 ```
@@ -147,7 +184,13 @@
 #### push notification style of video
  - function
 ```
--(void)videoPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fileName:(NSString *)fileName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)videoPushNotificationWithTitle:(NSString *)title 
+                             subTitle:(NSString *)subTitle 
+                                 body:(NSString *)body 
+                           identifier:(NSString *)identifier 
+                             fileName:(NSString *)fileName 
+                         timeInterval:(NSInteger)timeInterval
+                               repeat:(BOOL)repeat;
 ```
  - usage
 ```
@@ -157,7 +200,14 @@
 #### push notification style of video,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
--(void)videoPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fileName:(NSString *)fileName soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)videoPushNotificationWithTitle:(NSString *)title 
+                             subTitle:(NSString *)subTitle
+                                 body:(NSString *)body 
+                           identifier:(NSString *)identifier 
+                             fileName:(NSString *)fileName 
+                            soundName:(NSString *)soundName
+                         timeInterval:(NSInteger)timeInterval 
+                               repeat:(BOOL)repeat;
 ```
 - usage
 ```
@@ -167,7 +217,13 @@
 #### push notification style of video,provide a video download from internet
  - function
 ```
--(void)videoPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier urlString:(NSString *)urlString timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)videoPushNotificationWithTitle:(NSString *)title
+                             subTitle:(NSString *)subTitle 
+                                 body:(NSString *)body 
+                           identifier:(NSString *)identifier
+                            urlString:(NSString *)urlString 
+                         timeInterval:(NSInteger)timeInterval 
+                               repeat:(BOOL)repeat; 
 ```
  - usage
 ```
@@ -177,7 +233,14 @@
 #### push notification style of video,provide a video download from internet and a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
--(void)videoPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier urlString:(NSString *)urlString soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)videoPushNotificationWithTitle:(NSString *)title 
+                             subTitle:(NSString *)subTitle
+                                 body:(NSString *)body 
+                           identifier:(NSString *)identifier 
+                            urlString:(NSString *)urlString
+                            soundName:(NSString *)soundName
+                         timeInterval:(NSInteger)timeInterval 
+                               repeat:(BOOL)repeat;
 ```
  - usage
 ```
@@ -187,7 +250,16 @@
 #### push notification style of timing
  - function
 ```
--(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier weekday:(NSString *)weekday hour:(NSString *)hour minute:(NSString *)minute second:(NSString *)second timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)timingPushNotificationWithTitle:(NSString *)title 
+                              subTitle:(NSString *)subTitle
+                                  body:(NSString *)body 
+                            identifier:(NSString *)identifier 
+                               weekday:(NSString *)weekday
+                                  hour:(NSString *)hour 
+                                minute:(NSString *)minute 
+                                second:(NSString *)second 
+                          timeInterval:(NSInteger)timeInterval
+                                repeat:(BOOL)repeat;
 ```
  - usage
 ```
@@ -197,7 +269,17 @@
 #### push notification style of timing,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
--(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier weekday:(NSString *)weekday hour:(NSString *)hour minute:(NSString *)minute second:(NSString *)second soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)timingPushNotificationWithTitle:(NSString *)title 
+                              subTitle:(NSString *)subTitle
+                                  body:(NSString *)body
+                            identifier:(NSString *)identifier 
+                               weekday:(NSString *)weekday 
+                                  hour:(NSString *)hour 
+                                minute:(NSString *)minute 
+                                second:(NSString *)second 
+                             soundName:(NSString *)soundName 
+                          timeInterval:(NSInteger)timeInterval 
+                                repeat:(BOOL)repeat;
 ```
 - usage
 ```
@@ -207,7 +289,18 @@
 #### push notification style of timing(ex.2017-10-1 5:12)
  - function
 ```
--(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier year:(NSString *)year month:(NSString *)month day:(NSString *)day hour:(NSString *)hour minute:(NSString *)minute second:(NSString *)second timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)timingPushNotificationWithTitle:(NSString *)title 
+                              subTitle:(NSString *)subTitle
+                                  body:(NSString *)body 
+                            identifier:(NSString *)identifier 
+                                  year:(NSString *)year 
+                                 month:(NSString *)month 
+                                   day:(NSString *)day
+                                  hour:(NSString *)hour
+                                minute:(NSString *)minute 
+                                second:(NSString *)second 
+                          timeInterval:(NSInteger)timeInterval
+                                repeat:(BOOL)repeat;
 ```
  - usage
 ```
@@ -217,7 +310,19 @@
 #### push notification style of timing(ex.2017-10-1 5:12),provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
--(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier year:(NSString *)year month:(NSString *)month day:(NSString *)day hour:(NSString *)hour minute:(NSString *)minute second:(NSString *)second soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)timingPushNotificationWithTitle:(NSString *)title 
+                              subTitle:(NSString *)subTitle 
+                                  body:(NSString *)body 
+                            identifier:(NSString *)identifier 
+                                  year:(NSString *)year
+                                 month:(NSString *)month 
+                                   day:(NSString *)day 
+                                  hour:(NSString *)hour
+                                minute:(NSString *)minute 
+                                second:(NSString *)second 
+                             soundName:(NSString *)soundName 
+                          timeInterval:(NSInteger)timeInterval 
+                                repeat:(BOOL)repeat;
 ```
  - usage
 ```
@@ -234,7 +339,13 @@
 #### push notification style of timing,the fire date is included in a dictionary,the fireDate usage is as follows
  - function
 ```
--(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fireDate:(NSDictionary *)fireDate timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;   // the fire date include the properities,such as era,year,month,day,hour,minute,second,nanosecond,weekday,weekdayOrdinal,quarter,weekOfMonth,weekOfYear,yearForWeekOfYear
+-(void)timingPushNotificationWithTitle:(NSString *)title 
+                              subTitle:(NSString *)subTitle 
+                                  body:(NSString *)body 
+                            identifier:(NSString *)identifier
+                              fireDate:(NSDictionary *)fireDate 
+                          timeInterval:(NSInteger)timeInterval 
+                                repeat:(BOOL)repeat;   // the fire date include the properities,such as era,year,month,day,hour,minute,second,nanosecond,weekday,weekdayOrdinal,quarter,weekOfMonth,weekOfYear,yearForWeekOfYear
 ```
  - usage
 ```
@@ -244,7 +355,14 @@
 #### push notification style of timing,the fire date is included in a dictionary,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
--(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier fireDate:(NSDictionary *)fireDate soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)timingPushNotificationWithTitle:(NSString *)title
+                              subTitle:(NSString *)subTitle 
+                                  body:(NSString *)body 
+                            identifier:(NSString *)identifier 
+                              fireDate:(NSDictionary *)fireDate 
+                             soundName:(NSString *)soundName 
+                          timeInterval:(NSInteger)timeInterval 
+                                repeat:(BOOL)repeat;
 ```
  - usage
 ```
@@ -254,7 +372,14 @@
 #### push notification style of interactive
  - function
 ```
--(void)interactivePushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier identifierArray:(NSArray<NSString *> *)identifierArray actionArray:(NSArray<UNNotificationAction *> *)actionArray timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)interactivePushNotificationWithTitle:(NSString *)title 
+                                   subTitle:(NSString *)subTitle 
+                                       body:(NSString *)body 
+                                 identifier:(NSString *)identifier
+                            identifierArray:(NSArray<NSString *> *)identifierArray 
+                                actionArray:(NSArray<UNNotificationAction *> *)actionArray 
+                               timeInterval:(NSInteger)timeInterval 
+                                     repeat:(BOOL)repeat;
 ```
  - usage
 ```
@@ -267,7 +392,15 @@
 #### push notification style of interactive,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
--(void)interactivePushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier identifierArray:(NSArray<NSString *> *)identifierArray actionArray:(NSArray<UNNotificationAction *> *)actionArray soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
+-(void)interactivePushNotificationWithTitle:(NSString *)title 
+                                   subTitle:(NSString *)subTitle
+                                       body:(NSString *)body
+                                 identifier:(NSString *)identifier 
+                            identifierArray:(NSArray<NSString *> *)identifierArray 
+                                actionArray:(NSArray<UNNotificationAction *> *)actionArray 
+                                  soundName:(NSString *)soundName 
+                               timeInterval:(NSInteger)timeInterval 
+                                     repeat:(BOOL)repeat;
 ```
  - usage
 ```
@@ -280,7 +413,16 @@
 #### push notification style of location
  - function
 ```
--(void)locationPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier longitude:(CGFloat)longitude latitude:(CGFloat)latitude radius:(NSInteger)radius notifyOnEntry:(BOOL)notifyOnEntey ontifyOnExit:(BOOL)notifyOnExit repeat:(BOOL)repeat;
+-(void)locationPushNotificationWithTitle:(NSString *)title 
+                                subTitle:(NSString *)subTitle 
+                                    body:(NSString *)body 
+                              identifier:(NSString *)identifier 
+                               longitude:(CGFloat)longitude 
+                                latitude:(CGFloat)latitude
+                                  radius:(NSInteger)radius
+                           notifyOnEntry:(BOOL)notifyOnEntey 
+                            notifyOnExit:(BOOL)notifyOnExit
+                                  repeat:(BOOL)repeat;
 ```
  - usage
  ```
@@ -290,7 +432,17 @@
 #### push notification style of location,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
--(void)locationPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier longitude:(CGFloat)longitude latitude:(CGFloat)latitude radius:(NSInteger)radius notifyOnEntry:(BOOL)notifyOnEntey ontifyOnExit:(BOOL)notifyOnExit soundName:(NSString *)soundName repeat:(BOOL)repeat;
+-(void)locationPushNotificationWithTitle:(NSString *)title 
+                                subTitle:(NSString *)subTitle 
+                                    body:(NSString *)body 
+                              identifier:(NSString *)identifier 
+                               longitude:(CGFloat)longitude
+                                latitude:(CGFloat)latitude
+                                  radius:(NSInteger)radius
+                           notifyOnEntry:(BOOL)notifyOnEntey 
+                            ontifyOnExit:(BOOL)notifyOnExit 
+                               soundName:(NSString *)soundName 
+                                  repeat:(BOOL)repeat;
 ```
  - usage
 ```

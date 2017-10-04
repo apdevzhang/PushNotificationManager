@@ -146,7 +146,7 @@
 /**!
  * @brief `push notification style of location` ->`定点推送`
  */
--(void)locationPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier longitude:(CGFloat)longitude latitude:(CGFloat)latitude radius:(NSInteger)radius notifyOnEntry:(BOOL)notifyOnEntey ontifyOnExit:(BOOL)notifyOnExit repeat:(BOOL)repeat;
+-(void)locationPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier longitude:(CGFloat)longitude latitude:(CGFloat)latitude radius:(NSInteger)radius notifyOnEntry:(BOOL)notifyOnEntey notifyOnExit:(BOOL)notifyOnExit repeat:(BOOL)repeat;
 
 /**!
  * @brief `push notification style of location,provide a customized alert sound,e.g. @"intro.mp3"` ->`定点推送,可设置自定义提示音`

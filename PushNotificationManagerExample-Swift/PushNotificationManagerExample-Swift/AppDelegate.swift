@@ -2,20 +2,38 @@
 //  AppDelegate.swift
 //  PushNotificationManagerExample-Swift
 //
-//  Created by BANYAN on 2017/9/26.
+//  Created by BANYAN on 2017/10/25.
 //  Copyright © 2017年 GREENBANYAN. All rights reserved.
 //
 
 import UIKit
+import UserNotificationsUI
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if #available(iOS 10.0, *) {
+            let notificationCenter = UNUserNotificationCenter.current()
+            notificationCenter.delegate = self
+            let types = UNAuthorizationOptions([.alert,.badge,.sound])
+            notificationCenter.requestAuthorization(options: types, completionHandler: { (flag, error) in
+                if flag {
+                    print("注册成功")
+                } else {
+                    print("注册失败:\(error.debugDescription)")
+                }
+            })
+        } else {
+            let setting = UIUserNotificationSettings.init(types: [.alert, .badge, .sound], categories: nil)
+            application.registerUserNotificationSettings(setting)
+        }
+        UIApplication.shared.registerForRemoteNotifications()
+        
         return true
     }
 

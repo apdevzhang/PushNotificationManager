@@ -2,7 +2,7 @@
 //  PushNotificationManagerExample_SwiftUITests.swift
 //  PushNotificationManagerExample-SwiftUITests
 //
-//  Created by BANYAN on 2017/9/26.
+//  Created by BANYAN on 2017/10/25.
 //  Copyright © 2017年 GREENBANYAN. All rights reserved.
 //
 

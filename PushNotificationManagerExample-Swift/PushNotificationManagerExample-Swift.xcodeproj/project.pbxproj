@@ -7,64 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2384374C1F7A7FEE00987C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2384374B1F7A7FEE00987C8A /* AppDelegate.swift */; };
-		2384374E1F7A7FEE00987C8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2384374D1F7A7FEE00987C8A /* ViewController.swift */; };
-		238437511F7A7FEE00987C8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2384374F1F7A7FEE00987C8A /* Main.storyboard */; };
-		238437531F7A7FEE00987C8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238437521F7A7FEE00987C8A /* Assets.xcassets */; };
-		238437561F7A7FEE00987C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238437541F7A7FEE00987C8A /* LaunchScreen.storyboard */; };
-		238437611F7A7FEF00987C8A /* PushNotificationManagerExample_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238437601F7A7FEF00987C8A /* PushNotificationManagerExample_SwiftTests.swift */; };
-		2384376C1F7A7FEF00987C8A /* PushNotificationManagerExample_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2384376B1F7A7FEF00987C8A /* PushNotificationManagerExample_SwiftUITests.swift */; };
+		23A073361FA0C1E6004BF558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A073351FA0C1E6004BF558 /* AppDelegate.swift */; };
+		23A073381FA0C1E6004BF558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A073371FA0C1E6004BF558 /* ViewController.swift */; };
+		23A0733B1FA0C1E6004BF558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A073391FA0C1E6004BF558 /* Main.storyboard */; };
+		23A0733D1FA0C1E6004BF558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A0733C1FA0C1E6004BF558 /* Assets.xcassets */; };
+		23A073401FA0C1E6004BF558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A0733E1FA0C1E6004BF558 /* LaunchScreen.storyboard */; };
+		23A0734B1FA0C1E6004BF558 /* PushNotificationManagerExample_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0734A1FA0C1E6004BF558 /* PushNotificationManagerExample_SwiftTests.swift */; };
+		23A073561FA0C1E6004BF558 /* PushNotificationManagerExample_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A073551FA0C1E6004BF558 /* PushNotificationManagerExample_SwiftUITests.swift */; };
+		23A0736A1FA0C245004BF558 /* PushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A073691FA0C245004BF558 /* PushNotificationManager.m */; };
+		23F7CB591FA231030077B3B4 /* Graphics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23F7CB561FA231030077B3B4 /* Graphics.jpg */; };
+		23F7CB5A1FA231030077B3B4 /* Raining.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 23F7CB571FA231030077B3B4 /* Raining.mp4 */; };
+		23F7CB5B1FA231030077B3B4 /* tmp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 23F7CB581FA231030077B3B4 /* tmp.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2384375D1F7A7FEF00987C8A /* PBXContainerItemProxy */ = {
+		23A073471FA0C1E6004BF558 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 238437401F7A7FEE00987C8A /* Project object */;
+			containerPortal = 23A0732A1FA0C1E6004BF558 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 238437471F7A7FEE00987C8A;
+			remoteGlobalIDString = 23A073311FA0C1E6004BF558;
 			remoteInfo = "PushNotificationManagerExample-Swift";
 		};
-		238437681F7A7FEF00987C8A /* PBXContainerItemProxy */ = {
+		23A073521FA0C1E6004BF558 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 238437401F7A7FEE00987C8A /* Project object */;
+			containerPortal = 23A0732A1FA0C1E6004BF558 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 238437471F7A7FEE00987C8A;
+			remoteGlobalIDString = 23A073311FA0C1E6004BF558;
 			remoteInfo = "PushNotificationManagerExample-Swift";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		238437481F7A7FEE00987C8A /* PushNotificationManagerExample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PushNotificationManagerExample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2384374B1F7A7FEE00987C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2384374D1F7A7FEE00987C8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		238437501F7A7FEE00987C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		238437521F7A7FEE00987C8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		238437551F7A7FEE00987C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		238437571F7A7FEE00987C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2384375C1F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PushNotificationManagerExample-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		238437601F7A7FEF00987C8A /* PushNotificationManagerExample_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManagerExample_SwiftTests.swift; sourceTree = "<group>"; };
-		238437621F7A7FEF00987C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		238437671F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PushNotificationManagerExample-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2384376B1F7A7FEF00987C8A /* PushNotificationManagerExample_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManagerExample_SwiftUITests.swift; sourceTree = "<group>"; };
-		2384376D1F7A7FEF00987C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A073321FA0C1E6004BF558 /* PushNotificationManagerExample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PushNotificationManagerExample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A073351FA0C1E6004BF558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23A073371FA0C1E6004BF558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23A0733A1FA0C1E6004BF558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23A0733C1FA0C1E6004BF558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23A0733F1FA0C1E6004BF558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23A073411FA0C1E6004BF558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A073461FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PushNotificationManagerExample-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A0734A1FA0C1E6004BF558 /* PushNotificationManagerExample_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManagerExample_SwiftTests.swift; sourceTree = "<group>"; };
+		23A0734C1FA0C1E6004BF558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A073511FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PushNotificationManagerExample-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A073551FA0C1E6004BF558 /* PushNotificationManagerExample_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManagerExample_SwiftUITests.swift; sourceTree = "<group>"; };
+		23A073571FA0C1E6004BF558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A073631FA0C1F8004BF558 /* PushNotificationManagerExample-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PushNotificationManagerExample-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		23A073681FA0C245004BF558 /* PushNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationManager.h; sourceTree = "<group>"; };
+		23A073691FA0C245004BF558 /* PushNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationManager.m; sourceTree = "<group>"; };
+		23F7CB541FA21B960077B3B4 /* PushNotificationManagerExample-Swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PushNotificationManagerExample-Swift.entitlements"; sourceTree = "<group>"; };
+		23F7CB561FA231030077B3B4 /* Graphics.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Graphics.jpg; sourceTree = "<group>"; };
+		23F7CB571FA231030077B3B4 /* Raining.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Raining.mp4; sourceTree = "<group>"; };
+		23F7CB581FA231030077B3B4 /* tmp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tmp.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		238437451F7A7FEE00987C8A /* Frameworks */ = {
+		23A0732F1FA0C1E6004BF558 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		238437591F7A7FEE00987C8A /* Frameworks */ = {
+		23A073431FA0C1E6004BF558 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		238437641F7A7FEF00987C8A /* Frameworks */ = {
+		23A0734E1FA0C1E6004BF558 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,67 +85,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2384373F1F7A7FEE00987C8A = {
+		23A073291FA0C1E6004BF558 = {
 			isa = PBXGroup;
 			children = (
-				2384374A1F7A7FEE00987C8A /* PushNotificationManagerExample-Swift */,
-				2384375F1F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftTests */,
-				2384376A1F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftUITests */,
-				238437491F7A7FEE00987C8A /* Products */,
+				23F7CB551FA231030077B3B4 /* Asset */,
+				23A073671FA0C245004BF558 /* PushNotificationManager */,
+				23A073341FA0C1E6004BF558 /* PushNotificationManagerExample-Swift */,
+				23A073491FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftTests */,
+				23A073541FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftUITests */,
+				23A073331FA0C1E6004BF558 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		238437491F7A7FEE00987C8A /* Products */ = {
+		23A073331FA0C1E6004BF558 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				238437481F7A7FEE00987C8A /* PushNotificationManagerExample-Swift.app */,
-				2384375C1F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftTests.xctest */,
-				238437671F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftUITests.xctest */,
+				23A073321FA0C1E6004BF558 /* PushNotificationManagerExample-Swift.app */,
+				23A073461FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftTests.xctest */,
+				23A073511FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2384374A1F7A7FEE00987C8A /* PushNotificationManagerExample-Swift */ = {
+		23A073341FA0C1E6004BF558 /* PushNotificationManagerExample-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				2384374B1F7A7FEE00987C8A /* AppDelegate.swift */,
-				2384374D1F7A7FEE00987C8A /* ViewController.swift */,
-				2384374F1F7A7FEE00987C8A /* Main.storyboard */,
-				238437521F7A7FEE00987C8A /* Assets.xcassets */,
-				238437541F7A7FEE00987C8A /* LaunchScreen.storyboard */,
-				238437571F7A7FEE00987C8A /* Info.plist */,
+				23F7CB541FA21B960077B3B4 /* PushNotificationManagerExample-Swift.entitlements */,
+				23A073351FA0C1E6004BF558 /* AppDelegate.swift */,
+				23A073371FA0C1E6004BF558 /* ViewController.swift */,
+				23A073391FA0C1E6004BF558 /* Main.storyboard */,
+				23A0733C1FA0C1E6004BF558 /* Assets.xcassets */,
+				23A0733E1FA0C1E6004BF558 /* LaunchScreen.storyboard */,
+				23A073411FA0C1E6004BF558 /* Info.plist */,
+				23A073631FA0C1F8004BF558 /* PushNotificationManagerExample-Swift-Bridging-Header.h */,
 			);
 			path = "PushNotificationManagerExample-Swift";
 			sourceTree = "<group>";
 		};
-		2384375F1F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftTests */ = {
+		23A073491FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				238437601F7A7FEF00987C8A /* PushNotificationManagerExample_SwiftTests.swift */,
-				238437621F7A7FEF00987C8A /* Info.plist */,
+				23A0734A1FA0C1E6004BF558 /* PushNotificationManagerExample_SwiftTests.swift */,
+				23A0734C1FA0C1E6004BF558 /* Info.plist */,
 			);
 			path = "PushNotificationManagerExample-SwiftTests";
 			sourceTree = "<group>";
 		};
-		2384376A1F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftUITests */ = {
+		23A073541FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2384376B1F7A7FEF00987C8A /* PushNotificationManagerExample_SwiftUITests.swift */,
-				2384376D1F7A7FEF00987C8A /* Info.plist */,
+				23A073551FA0C1E6004BF558 /* PushNotificationManagerExample_SwiftUITests.swift */,
+				23A073571FA0C1E6004BF558 /* Info.plist */,
 			);
 			path = "PushNotificationManagerExample-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		23A073671FA0C245004BF558 /* PushNotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				23A073681FA0C245004BF558 /* PushNotificationManager.h */,
+				23A073691FA0C245004BF558 /* PushNotificationManager.m */,
+			);
+			name = PushNotificationManager;
+			path = ../PushNotificationManager;
+			sourceTree = "<group>";
+		};
+		23F7CB551FA231030077B3B4 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				23F7CB561FA231030077B3B4 /* Graphics.jpg */,
+				23F7CB571FA231030077B3B4 /* Raining.mp4 */,
+				23F7CB581FA231030077B3B4 /* tmp.mp3 */,
+			);
+			name = Asset;
+			path = ../Asset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		238437471F7A7FEE00987C8A /* PushNotificationManagerExample-Swift */ = {
+		23A073311FA0C1E6004BF558 /* PushNotificationManagerExample-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 238437701F7A7FEF00987C8A /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-Swift" */;
+			buildConfigurationList = 23A0735A1FA0C1E6004BF558 /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-Swift" */;
 			buildPhases = (
-				238437441F7A7FEE00987C8A /* Sources */,
-				238437451F7A7FEE00987C8A /* Frameworks */,
-				238437461F7A7FEE00987C8A /* Resources */,
+				23A0732E1FA0C1E6004BF558 /* Sources */,
+				23A0732F1FA0C1E6004BF558 /* Frameworks */,
+				23A073301FA0C1E6004BF558 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,72 +178,78 @@
 			);
 			name = "PushNotificationManagerExample-Swift";
 			productName = "PushNotificationManagerExample-Swift";
-			productReference = 238437481F7A7FEE00987C8A /* PushNotificationManagerExample-Swift.app */;
+			productReference = 23A073321FA0C1E6004BF558 /* PushNotificationManagerExample-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2384375B1F7A7FEE00987C8A /* PushNotificationManagerExample-SwiftTests */ = {
+		23A073451FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 238437731F7A7FEF00987C8A /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-SwiftTests" */;
+			buildConfigurationList = 23A0735D1FA0C1E6004BF558 /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-SwiftTests" */;
 			buildPhases = (
-				238437581F7A7FEE00987C8A /* Sources */,
-				238437591F7A7FEE00987C8A /* Frameworks */,
-				2384375A1F7A7FEE00987C8A /* Resources */,
+				23A073421FA0C1E6004BF558 /* Sources */,
+				23A073431FA0C1E6004BF558 /* Frameworks */,
+				23A073441FA0C1E6004BF558 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2384375E1F7A7FEF00987C8A /* PBXTargetDependency */,
+				23A073481FA0C1E6004BF558 /* PBXTargetDependency */,
 			);
 			name = "PushNotificationManagerExample-SwiftTests";
 			productName = "PushNotificationManagerExample-SwiftTests";
-			productReference = 2384375C1F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftTests.xctest */;
+			productReference = 23A073461FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		238437661F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftUITests */ = {
+		23A073501FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 238437761F7A7FEF00987C8A /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-SwiftUITests" */;
+			buildConfigurationList = 23A073601FA0C1E6004BF558 /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-SwiftUITests" */;
 			buildPhases = (
-				238437631F7A7FEF00987C8A /* Sources */,
-				238437641F7A7FEF00987C8A /* Frameworks */,
-				238437651F7A7FEF00987C8A /* Resources */,
+				23A0734D1FA0C1E6004BF558 /* Sources */,
+				23A0734E1FA0C1E6004BF558 /* Frameworks */,
+				23A0734F1FA0C1E6004BF558 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				238437691F7A7FEF00987C8A /* PBXTargetDependency */,
+				23A073531FA0C1E6004BF558 /* PBXTargetDependency */,
 			);
 			name = "PushNotificationManagerExample-SwiftUITests";
 			productName = "PushNotificationManagerExample-SwiftUITests";
-			productReference = 238437671F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftUITests.xctest */;
+			productReference = 23A073511FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		238437401F7A7FEE00987C8A /* Project object */ = {
+		23A0732A1FA0C1E6004BF558 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = GREENBANYAN;
 				TargetAttributes = {
-					238437471F7A7FEE00987C8A = {
-						CreatedOnToolsVersion = 9.0;
+					23A073311FA0C1E6004BF558 = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
-					2384375B1F7A7FEE00987C8A = {
-						CreatedOnToolsVersion = 9.0;
+					23A073451FA0C1E6004BF558 = {
+						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 238437471F7A7FEE00987C8A;
+						TestTargetID = 23A073311FA0C1E6004BF558;
 					};
-					238437661F7A7FEF00987C8A = {
-						CreatedOnToolsVersion = 9.0;
+					23A073501FA0C1E6004BF558 = {
+						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 238437471F7A7FEE00987C8A;
+						TestTargetID = 23A073311FA0C1E6004BF558;
 					};
 				};
 			};
-			buildConfigurationList = 238437431F7A7FEE00987C8A /* Build configuration list for PBXProject "PushNotificationManagerExample-Swift" */;
+			buildConfigurationList = 23A0732D1FA0C1E6004BF558 /* Build configuration list for PBXProject "PushNotificationManagerExample-Swift" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,37 +257,40 @@
 				en,
 				Base,
 			);
-			mainGroup = 2384373F1F7A7FEE00987C8A;
-			productRefGroup = 238437491F7A7FEE00987C8A /* Products */;
+			mainGroup = 23A073291FA0C1E6004BF558;
+			productRefGroup = 23A073331FA0C1E6004BF558 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				238437471F7A7FEE00987C8A /* PushNotificationManagerExample-Swift */,
-				2384375B1F7A7FEE00987C8A /* PushNotificationManagerExample-SwiftTests */,
-				238437661F7A7FEF00987C8A /* PushNotificationManagerExample-SwiftUITests */,
+				23A073311FA0C1E6004BF558 /* PushNotificationManagerExample-Swift */,
+				23A073451FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftTests */,
+				23A073501FA0C1E6004BF558 /* PushNotificationManagerExample-SwiftUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		238437461F7A7FEE00987C8A /* Resources */ = {
+		23A073301FA0C1E6004BF558 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				238437561F7A7FEE00987C8A /* LaunchScreen.storyboard in Resources */,
-				238437531F7A7FEE00987C8A /* Assets.xcassets in Resources */,
-				238437511F7A7FEE00987C8A /* Main.storyboard in Resources */,
+				23F7CB5B1FA231030077B3B4 /* tmp.mp3 in Resources */,
+				23F7CB591FA231030077B3B4 /* Graphics.jpg in Resources */,
+				23F7CB5A1FA231030077B3B4 /* Raining.mp4 in Resources */,
+				23A073401FA0C1E6004BF558 /* LaunchScreen.storyboard in Resources */,
+				23A0733D1FA0C1E6004BF558 /* Assets.xcassets in Resources */,
+				23A0733B1FA0C1E6004BF558 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2384375A1F7A7FEE00987C8A /* Resources */ = {
+		23A073441FA0C1E6004BF558 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		238437651F7A7FEF00987C8A /* Resources */ = {
+		23A0734F1FA0C1E6004BF558 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,59 +300,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		238437441F7A7FEE00987C8A /* Sources */ = {
+		23A0732E1FA0C1E6004BF558 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2384374E1F7A7FEE00987C8A /* ViewController.swift in Sources */,
-				2384374C1F7A7FEE00987C8A /* AppDelegate.swift in Sources */,
+				23A073381FA0C1E6004BF558 /* ViewController.swift in Sources */,
+				23A073361FA0C1E6004BF558 /* AppDelegate.swift in Sources */,
+				23A0736A1FA0C245004BF558 /* PushNotificationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		238437581F7A7FEE00987C8A /* Sources */ = {
+		23A073421FA0C1E6004BF558 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				238437611F7A7FEF00987C8A /* PushNotificationManagerExample_SwiftTests.swift in Sources */,
+				23A0734B1FA0C1E6004BF558 /* PushNotificationManagerExample_SwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		238437631F7A7FEF00987C8A /* Sources */ = {
+		23A0734D1FA0C1E6004BF558 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2384376C1F7A7FEF00987C8A /* PushNotificationManagerExample_SwiftUITests.swift in Sources */,
+				23A073561FA0C1E6004BF558 /* PushNotificationManagerExample_SwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2384375E1F7A7FEF00987C8A /* PBXTargetDependency */ = {
+		23A073481FA0C1E6004BF558 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 238437471F7A7FEE00987C8A /* PushNotificationManagerExample-Swift */;
-			targetProxy = 2384375D1F7A7FEF00987C8A /* PBXContainerItemProxy */;
+			target = 23A073311FA0C1E6004BF558 /* PushNotificationManagerExample-Swift */;
+			targetProxy = 23A073471FA0C1E6004BF558 /* PBXContainerItemProxy */;
 		};
-		238437691F7A7FEF00987C8A /* PBXTargetDependency */ = {
+		23A073531FA0C1E6004BF558 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 238437471F7A7FEE00987C8A /* PushNotificationManagerExample-Swift */;
-			targetProxy = 238437681F7A7FEF00987C8A /* PBXContainerItemProxy */;
+			target = 23A073311FA0C1E6004BF558 /* PushNotificationManagerExample-Swift */;
+			targetProxy = 23A073521FA0C1E6004BF558 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2384374F1F7A7FEE00987C8A /* Main.storyboard */ = {
+		23A073391FA0C1E6004BF558 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				238437501F7A7FEE00987C8A /* Base */,
+				23A0733A1FA0C1E6004BF558 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		238437541F7A7FEE00987C8A /* LaunchScreen.storyboard */ = {
+		23A0733E1FA0C1E6004BF558 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				238437551F7A7FEE00987C8A /* Base */,
+				23A0733F1FA0C1E6004BF558 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -315,7 +361,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2384376E1F7A7FEF00987C8A /* Debug */ = {
+		23A073581FA0C1E6004BF558 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -372,7 +418,7 @@
 			};
 			name = Debug;
 		};
-		2384376F1F7A7FEF00987C8A /* Release */ = {
+		23A073591FA0C1E6004BF558 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -422,37 +468,44 @@
 			};
 			name = Release;
 		};
-		238437711F7A7FEF00987C8A /* Debug */ = {
+		23A0735B1FA0C1E6004BF558 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "PushNotificationManagerExample-Swift/PushNotificationManagerExample-Swift.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7K8D3B6VQ;
 				INFOPLIST_FILE = "PushNotificationManagerExample-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "BANYAN.PushNotificationManagerExample-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BANYAN.PushNotificationManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PushNotificationManagerExample-Swift/PushNotificationManagerExample-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		238437721F7A7FEF00987C8A /* Release */ = {
+		23A0735C1FA0C1E6004BF558 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "PushNotificationManagerExample-Swift/PushNotificationManagerExample-Swift.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7K8D3B6VQ;
 				INFOPLIST_FILE = "PushNotificationManagerExample-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "BANYAN.PushNotificationManagerExample-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BANYAN.PushNotificationManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PushNotificationManagerExample-Swift/PushNotificationManagerExample-Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		238437741F7A7FEF00987C8A /* Debug */ = {
+		23A0735E1FA0C1E6004BF558 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -469,7 +522,7 @@
 			};
 			name = Debug;
 		};
-		238437751F7A7FEF00987C8A /* Release */ = {
+		23A0735F1FA0C1E6004BF558 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -486,7 +539,7 @@
 			};
 			name = Release;
 		};
-		238437771F7A7FEF00987C8A /* Debug */ = {
+		23A073611FA0C1E6004BF558 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -502,7 +555,7 @@
 			};
 			name = Debug;
 		};
-		238437781F7A7FEF00987C8A /* Release */ = {
+		23A073621FA0C1E6004BF558 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -521,43 +574,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		238437431F7A7FEE00987C8A /* Build configuration list for PBXProject "PushNotificationManagerExample-Swift" */ = {
+		23A0732D1FA0C1E6004BF558 /* Build configuration list for PBXProject "PushNotificationManagerExample-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2384376E1F7A7FEF00987C8A /* Debug */,
-				2384376F1F7A7FEF00987C8A /* Release */,
+				23A073581FA0C1E6004BF558 /* Debug */,
+				23A073591FA0C1E6004BF558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		238437701F7A7FEF00987C8A /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-Swift" */ = {
+		23A0735A1FA0C1E6004BF558 /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				238437711F7A7FEF00987C8A /* Debug */,
-				238437721F7A7FEF00987C8A /* Release */,
+				23A0735B1FA0C1E6004BF558 /* Debug */,
+				23A0735C1FA0C1E6004BF558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		238437731F7A7FEF00987C8A /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-SwiftTests" */ = {
+		23A0735D1FA0C1E6004BF558 /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-SwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				238437741F7A7FEF00987C8A /* Debug */,
-				238437751F7A7FEF00987C8A /* Release */,
+				23A0735E1FA0C1E6004BF558 /* Debug */,
+				23A0735F1FA0C1E6004BF558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		238437761F7A7FEF00987C8A /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-SwiftUITests" */ = {
+		23A073601FA0C1E6004BF558 /* Build configuration list for PBXNativeTarget "PushNotificationManagerExample-SwiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				238437771F7A7FEF00987C8A /* Debug */,
-				238437781F7A7FEF00987C8A /* Release */,
+				23A073611FA0C1E6004BF558 /* Debug */,
+				23A073621FA0C1E6004BF558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 238437401F7A7FEE00987C8A /* Project object */;
+	rootObject = 23A0732A1FA0C1E6004BF558 /* Project object */;
 }

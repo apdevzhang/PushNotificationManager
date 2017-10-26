@@ -271,7 +271,7 @@
 
         case 5:{ // "定点类型" = "PushNotificationStyleLocation";
             if (indexPath.row == 0) {
-                [[PushNotificationManager sharedInstance]locationPushNotificationWithTitle:@"Pink Floyd" subTitle:@"《Wish You Were Here》" body:@"How I wish you were here" identifier:@"6-1" longitude:120.030632 latitude:30.288121 radius:1000 notifyOnEntry:YES ontifyOnExit:YES repeat:NO];
+                [[PushNotificationManager sharedInstance]locationPushNotificationWithTitle:@"Pink Floyd" subTitle:@"Wish You Were Here》" body:@"How I wish you were here" identifier:@"6-1" longitude:120.030632 latitude:30.288121 radius:100 notifyOnEntry:YES notifyOnExit:YES repeat:NO];
                 [self showHUDAddTo:self.view labelText:NSLocalizedString(@"推送将在3秒后执行", nil) hideAfterDelay:2];
             }else if (indexPath.row == 1){
                 [[PushNotificationManager sharedInstance]locationPushNotificationWithTitle:@"Pink Floyd" subTitle:@"《Wish You Were Here》" body:@"How I wish you were here" identifier:@"6-2" longitude:120.030632 latitude:30.288121 radius:1000 notifyOnEntry:YES ontifyOnExit:YES soundName:@"tmp.mp3" repeat:NO];

@@ -288,8 +288,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         if application.applicationState == UIApplicationState.active {
             // 代表从前台接受消息app
         }else{
-            // 代表从后台接受消息后进入app
-            
+            // 代表从后台接受消息后进入app            
         }
         completionHandler(.newData)
     }

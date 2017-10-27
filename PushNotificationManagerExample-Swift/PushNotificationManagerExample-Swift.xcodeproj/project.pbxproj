@@ -476,7 +476,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PushNotificationManagerExample-Swift/PushNotificationManagerExample-Swift.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4V9V4QN3V;
+				DEVELOPMENT_TEAM = X7K8D3B6VQ;
 				INFOPLIST_FILE = "PushNotificationManagerExample-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BANYAN.PushNotificationManagerExample-Swift";
@@ -497,7 +497,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PushNotificationManagerExample-Swift/PushNotificationManagerExample-Swift.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4V9V4QN3V;
+				DEVELOPMENT_TEAM = X7K8D3B6VQ;
 				INFOPLIST_FILE = "PushNotificationManagerExample-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BANYAN.PushNotificationManagerExample-Swift";

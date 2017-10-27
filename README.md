@@ -17,7 +17,7 @@
    the example for API usage written by Objective-C
 - [PushNotificationManagerExample-Swift](./PushNotificationManagerExample-Swift)<br/>
    the example for API usage written by Swift
-- [screenshot](./screenshot)<br/>
+- [Screenshot](./Screenshot)<br/>
    project operation screenshot 
 
 ## Catalog
@@ -91,7 +91,7 @@
 <pre>
  pod 'PushNotificationManager'
 </pre>
- ![screenshot/cocoapods.png](screenshot/cocoapods1.0.1.png)
+ ![Screenshot/cocoapods.png](Screenshot/cocoapods1.0.1.png)
  
 <a name="Examples"></a>
 ### Examples

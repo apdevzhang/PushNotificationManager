@@ -76,6 +76,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 6
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 2
@@ -96,6 +97,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
             return " 普通类型"
@@ -112,6 +114,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
         return ""
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
@@ -138,6 +141,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {        
         switch indexPath.section {
         case 0: // "普通类型" = "PushNotificationStyleNormal";

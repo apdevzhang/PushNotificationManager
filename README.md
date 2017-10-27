@@ -149,11 +149,11 @@
                           timeInterval:(NSInteger)timeInterval 
                                 repeat:(BOOL)repeat;
 ```
-- Objective-C usage
+ - Objective-C usage
 ```
  [[PushNotificationManager sharedInstance]normalPushNotificationWithTitle:@"John Winston Lennon" subTitle:@"《Imagine》" body:@"You may say that I'm a dreamer, but I'm not the only one" identifier:@"1-1" timeInterval:3 repeat:NO];   //`repeat` if you pick the repeat property 'YES',you require to set the timeInterval value >= 60second ->是否重复,若要重复->时间间隔应>=60s
 ```
-- Swift usage
+ - Swift usage
 ```
 PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "1-1", timeInterval: 3, repeat: false)
 ```
@@ -169,7 +169,7 @@ PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon
                           timeInterval:(NSInteger)timeInterval 
                                 repeat:(BOOL)repeat;
 ```
-- Objective-C usage
+ - Objective-C usage
  ```
 [[PushNotificationManager sharedInstance]normalPushNotificationWithTitle:@"John Winston Lennon" subTitle:@"《Imagine》" body:@"You may say that I'm a dreamer, but I'm not the only one" identifier:@"1-2" soundName:@"tmp.mp3" timeInterval:3 repeat:NO];
  ```
@@ -189,7 +189,7 @@ PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon
                             timeInterval:(NSInteger)timeInterval 
                                   repeat:(BOOL)repeat;
 ```
-- Objective-C usage
+ - Objective-C usage
  ```
 [[PushNotificationManager sharedInstance]graphicsPushNotificationWithTitle:@"John Winston Lennon" subTitle:@"《Imagine》" body:@"You may say that I'm a dreamer, but I'm not the only one" identifier:@"2-1" fileName:@"Graphics.jpg" timeInterval:3 repeat:NO];
  ```
@@ -199,7 +199,7 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
 ```
  
 #### push notification style of graphics,provide a customized alert sound,e.g. @"intro.mp3"
- - function
+  - function
 ```
 -(void)graphicsPushNotificationWithTitle:(NSString *)title 
                                 subTitle:(NSString *)subTitle 
@@ -210,11 +210,11 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
                             timeInterval:(NSInteger)timeInterval 
                                   repeat:(BOOL)repeat;
 ```
-- Objective-C usage
+ - Objective-C usage
 ```
 [[PushNotificationManager sharedInstance]graphicsPushNotificationWithTitle:@"John Winston Lennon" subTitle:@"《Imagine》" body:@"You may say that I'm a dreamer, but I'm not the only one" identifier:@"2-2" fileName:@"Graphics.jpg" soundName:@"tmp.mp3" timeInterval:3 repeat:NO];
 ```
-- Swift usage
+ - Swift usage
 ```
 PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "2-2", fileName: "Graphics.jpg", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
 ```
@@ -230,7 +230,7 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
                             timeInterval:(NSInteger)timeInterval 
                                   repeat:(BOOL)repeat;
 ```
-- Objective-C usage
+ - Objective-C usage
  ```
 [[PushNotificationManager sharedInstance]graphicsPushNotificationWithTitle:@"John Winston Lennon" subTitle:@"《Imagine》" body:@"You may say that I'm a dreamer, but I'm not the only one" identifier:@"2-3" urlString:@"https://i.loli.net/2017/09/30/59cf8056a1e21.jpg" timeInterval:3 repeat:NO];
  ```
@@ -251,11 +251,11 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
                             timeInterval:(NSInteger)timeInterval
                                   repeat:(BOOL)repeat;
 ```
-- Objective-C usage
+ - Objective-C usage
 ```
 [[PushNotificationManager sharedInstance]graphicsPushNotificationWithTitle:@"John Winston Lennon" subTitle:@"《Imagine》" body:@"You may say that I'm a dreamer, but I'm not the only one" identifier:@"2-4" urlString:@"https://i.loli.net/2017/09/30/59cf8056a1e21.jpg" soundName:@"tmp.mp3" timeInterval:3 repeat:NO];
 ```
-- Swift usage
+ - Swift usage
 ```
 PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "2-4", urlString: "https://i.loli.net/2017/09/30/59cf8056a1e21.jpg", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
 ```
@@ -271,9 +271,13 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
                          timeInterval:(NSInteger)timeInterval
                                repeat:(BOOL)repeat;
 ```
- - usage
+ - Objective-c usage
 ```
 [[PushNotificationManager sharedInstance]videoPushNotificationWithTitle:@"John Winston Lennon" subTitle:@"《Imagine》" body:@"You may say that I'm a dreamer, but I'm not the only one" identifier:@"3-1" fileName:@"Raining.mp4" timeInterval:3 repeat:NO];
+```
+ - Swift usage
+```
+PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "3-1", fileName: "Raining.mp4", timeInterval: 3, repeat: false)
 ```
 
 #### push notification style of video,provide a customized alert sound,e.g. @"intro.mp3"
@@ -288,9 +292,13 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
                          timeInterval:(NSInteger)timeInterval 
                                repeat:(BOOL)repeat;
 ```
-- usage
+ - Objective-c usage
 ```
 [[PushNotificationManager sharedInstance]videoPushNotificationWithTitle:@"John Winston Lennon" subTitle:@"《Imagine》" body:@"You may say that I'm a dreamer, but I'm not the only one" identifier:@"3-2" fileName:@"Raining.mp4" soundName:@"tmp.mp3" timeInterval:3 repeat:NO];
+```
+ - Swift usage
+```
+PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "3-2", fileName: "Raining.mp4", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
 ```
 
 #### push notification style of video,provide a video download from internet
@@ -304,9 +312,13 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
                          timeInterval:(NSInteger)timeInterval 
                                repeat:(BOOL)repeat; 
 ```
- - usage
+ - Objective-c usage
 ```
 [[PushNotificationManager sharedInstance]videoPushNotificationWithTitle:@"John Winston Lennon" subTitle:@"《Imagine》" body:@"You may say that I'm a dreamer, but I'm not the only one" identifier:@"3-3" urlString:@"http://mvideo.spriteapp.cn/video/2017/0929/043c1392-a527-11e7-8f71-1866daeb0df1cutblack_wpcco.mp4" timeInterval:5 repeat:NO]; //it need some time to download the video from internet,so set the `timeInterval` as 5s
+```
+ - Swift usage
+```
+PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "3-3", urlString: "http://mvideo.spriteapp.cn/video/2017/0929/043c1392-a527-11e7-8f71-1866daeb0df1cutblack_wpcco.mp4", timeInterval: 5, repeat: false)
 ```
 
 #### push notification style of video,provide a video download from internet and a customized alert sound,e.g. @"intro.mp3"
@@ -324,6 +336,10 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
  - Objective-C usage
 ```
 [[PushNotificationManager sharedInstance]videoPushNotificationWithTitle:@"John Winston Lennon" subTitle:@"《Imagine》" body:@"You may say that I'm a dreamer, but I'm not the only one" identifier:@"3-4" urlString:@"http://mvideo.spriteapp.cn/video/2017/0929/043c1392-a527-11e7-8f71-1866daeb0df1cutblack_wpcco.mp4" soundName:@"tmp.mp3" timeInterval:5 repeat:NO];
+```
+ - Swift usage
+```
+PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "3-4", urlString: "http://mvideo.spriteapp.cn/video/2017/0929/043c1392-a527-11e7-8f71-1866daeb0df1cutblack_wpcco.mp4", soundName: "tmp.mp3", timeInterval: 5, repeat: false)
 ```
 
 #### push notification style of timing

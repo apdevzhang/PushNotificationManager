@@ -19,7 +19,6 @@
    the example for API usage written by Swift
 - [screenshot](./screenshot)<br/>
    project operation screenshot 
----
 
 ## Catalog
 - [API](#API) 

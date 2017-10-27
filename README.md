@@ -68,15 +68,15 @@
 ### Preview
  mainpage screenshot1  | mainpage screenshot2 | mainpage screenshot3 | mainpage screenshot4
  -----|-----|-----|-----
- ![Screenshot/Screenshot1.png](Screenshot/Screenshot1.png) |  ![Screenshot/Screenshot2.png](Screenshot/Screenshot2.png) |  ![Screenshot/Screenshot3.png](Screenshot/Screenshot3.png) |  ![Screenshot/Screenshot4.png](Screenshot/Screenshot4.png)
+ ![Screenshot/screenshot1.png](Screenshot/screenshot1.png) |  ![Screenshot/screenshot2.png](Screenshot/screenshot2.png) |  ![Screenshot/screenshot3.png](Screenshot/screenshot3.png) |  ![Screenshot/screenshot4.png](Screenshot/screenshot4.png)
  
  push notification style of normal | push notification style of graphics | push notification style of video
  -----|-----|-----
-![Screenshot/Screenshot6.png](Screenshot/Screenshot6.png) | ![Screenshot/Screenshot7.png](Screenshot/Screenshot7.png) | ![Screenshot/Screenshot9.png](Screenshot/Screenshot9.png) 
- 
+![Screenshot/screenshot6.png](Screenshot/screenshot6.png) | ![Screenshot/screenshot7.png](Screenshot/screenshot7.png) | ![Screenshot/screenshot9.png](Screenshot/screenshot9.png) 
+
  interactive setp1 | interactive setp2 | interactive setp3
  -----|-----|-----
- ![Screenshot/Screenshot11.png](Screenshot/Screenshot11.png) | ![Screenshot/Screenshot12.png](Screenshot/Screenshot12.png) |  ![Screenshot/Screenshot13.png](Screenshot/Screenshot13.png)
+ ![Screenshot/screenshot11.png](Screenshot/screenshot11.png) | ![Screenshot/screenshot12.png](Screenshot/screenshot12.png) |  ![Screenshot/screenshot13.png](Screenshot/screenshot13.png)
  
   interactive gif | video gif 
  -----|-----

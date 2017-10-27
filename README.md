@@ -139,6 +139,7 @@
         }
         UIApplication.shared.registerForRemoteNotifications()
 ```
+---
 #### push notification style of normal
  - function
 ```
@@ -157,7 +158,7 @@
 ```
 PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "1-1", timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of normal,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
@@ -177,7 +178,7 @@ PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon
  ```
  PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "1-2", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
  ```
- 
+ ---
 #### push notification style of graphics,include the format of png、jpg、gif and other graphics formats
  - function
 ```
@@ -197,7 +198,7 @@ PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon
 ```
 PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "2-1", fileName: "Graphics.jpg", timeInterval: 3, repeat: false)
 ```
- 
+ ---
 #### push notification style of graphics,provide a customized alert sound,e.g. @"intro.mp3"
   - function
 ```
@@ -218,7 +219,7 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
 ```
 PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "2-2", fileName: "Graphics.jpg", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of graphics,provide a graphics download from internet
  - function
 ```
@@ -238,7 +239,7 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
  ```
  PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "2-3", urlString: "https://i.loli.net/2017/09/30/59cf8056a1e21.jpg", timeInterval: 3, repeat: false)
  ```
- 
+ ---
 #### push notification style of graphics,provide a graphics download from internet and a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
@@ -259,7 +260,7 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
 ```
 PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "2-4", urlString: "https://i.loli.net/2017/09/30/59cf8056a1e21.jpg", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of video
  - function
 ```
@@ -279,7 +280,7 @@ PushNotificationManager().graphicsPushNotification(withTitle: "John Winston Lenn
 ```
 PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "3-1", fileName: "Raining.mp4", timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of video,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
@@ -300,7 +301,7 @@ PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon"
 ```
 PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "3-2", fileName: "Raining.mp4", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of video,provide a video download from internet
  - function
 ```
@@ -320,7 +321,7 @@ PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon"
 ```
 PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "3-3", urlString: "http://mvideo.spriteapp.cn/video/2017/0929/043c1392-a527-11e7-8f71-1866daeb0df1cutblack_wpcco.mp4", timeInterval: 5, repeat: false)
 ```
-
+---
 #### push notification style of video,provide a video download from internet and a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
@@ -341,7 +342,7 @@ PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon"
 ```
 PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "3-4", urlString: "http://mvideo.spriteapp.cn/video/2017/0929/043c1392-a527-11e7-8f71-1866daeb0df1cutblack_wpcco.mp4", soundName: "tmp.mp3", timeInterval: 5, repeat: false)
 ```
-
+---
 #### push notification style of timing
  - function
 ```
@@ -364,7 +365,7 @@ PushNotificationManager().videoPushNotification(withTitle: "John Winston Lennon"
 ```
 PushNotificationManager().timingPushNotification(withTitle: "2017-10-27", subTitle: "little tired", body: "want to go home", identifier: "4-1", weekday: "1", hour: "2", minute: "49", second: "50", timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of timing,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
@@ -388,7 +389,7 @@ PushNotificationManager().timingPushNotification(withTitle: "2017-10-27", subTit
 ```
 PushNotificationManager().timingPushNotification(withTitle: "2017-10-27", subTitle: "little tired", body: "want to go home", identifier: "4-2", weekday: "1", hour: "2", minute: "49", second: "50", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of timing(ex.2017-10-1 5:12)
  - function
 ```
@@ -413,7 +414,7 @@ PushNotificationManager().timingPushNotification(withTitle: "2017-10-27", subTit
 ```
 PushNotificationManager().timingPushNotification(withTitle: "王菲", subTitle: "《单行道》", body: "春眠不觉晓,庸人偏自扰", identifier: "4-3", year: "2017", month: "10", day: "2", hour: "2", minute: "0", second: "0", timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of timing(ex.2017-10-1 5:12),provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
@@ -439,7 +440,7 @@ PushNotificationManager().timingPushNotification(withTitle: "王菲", subTitle: 
 ```
 PushNotificationManager().timingPushNotification(withTitle: "王菲", subTitle: "《单行道》", body: "春眠不觉晓,庸人偏自扰", identifier: "4-4", year: "2017", month: "10", day: "2", hour: "2", minute: "0", second: "0", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
 ```
-
+---
 ```
 //    NSDictionary *dict = @{@"weekday":@1, //the `1` said Sunday in China ->`1`等于中国周日
 //                           @"hour":@2,
@@ -466,7 +467,7 @@ PushNotificationManager().timingPushNotification(withTitle: "王菲", subTitle: 
 ```
 PushNotificationManager().timingPushNotification(withTitle: "Bang Gang", subTitle: "《Forever Now》", body: "You can see her in the distance\n Where she walks alone\n Thenyou follow her direction\n To your second home", identifier: "4-5", fireDate: ["year":2017,"month":10,"day":2,"hour":2,"minute":55], timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of timing,the fire date is included in a dictionary,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
@@ -487,7 +488,7 @@ PushNotificationManager().timingPushNotification(withTitle: "Bang Gang", subTitl
 ```
 PushNotificationManager().timingPushNotification(withTitle: "Bang Gang", subTitle: "《Forever Now》", body: "You can see her in the distance\n Where she walks alone\n Thenyou follow her direction\n To your second home", identifier: "4-6", fireDate: ["year":2017,"month":10,"day":2,"hour":2,"minute":55], soundName: "tmp.mp3", timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of interactive
  - function
 ```
@@ -528,7 +529,7 @@ let inputAction = UNTextInputNotificationAction(
                     
 PushNotificationManager().interactivePushNotification(withTitle: "Bang Gang", subTitle: "《Forever Now》", body: "You can see her in the distance\n Where she walks alone\n Then you follow her direction\n To your second home", identifier: "5-1", identifierArray: [inputAction.identifier,enterAction.identifier,cancelAction.identifier], actionArray:[inputAction,enterAction,cancelAction], timeInterval: 3, repeat: false);
 ```
-
+---
 #### push notification style of interactive,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
@@ -570,7 +571,7 @@ let inputAction = UNTextInputNotificationAction(
                     
  PushNotificationManager().interactivePushNotification(withTitle: "Bang Gang", subTitle: "《Forever Now》", body: "You can see her in the distance\n Where she walks alone\n Then you follow her direction\n To your second home", identifier: "5-2", identifierArray: [inputAction.identifier,enterAction.identifier,cancelAction.identifier], actionArray: [inputAction,enterAction,cancelAction], soundName: "tmp.mp3", timeInterval: 3, repeat: false)
 ```
-
+---
 #### push notification style of location
  - function
 ```
@@ -593,7 +594,7 @@ let inputAction = UNTextInputNotificationAction(
 ```
 PushNotificationManager().locationPushNotification(withTitle: "Pink Floyd", subTitle: "《Wish You Were Here》", body: "How I wish you were here", identifier: "6-2", longitude: 120.030632, latitude: 30.288121, radius: 100, notifyOnEntry: true, ontifyOnExit: true, soundName: "tmp.mp3", repeat: false)
 ```
-
+---
 #### push notification style of location,provide a customized alert sound,e.g. @"intro.mp3"
  - function
 ```
@@ -617,7 +618,7 @@ PushNotificationManager().locationPushNotification(withTitle: "Pink Floyd", subT
 ```
 PushNotificationManager().locationPushNotification(withTitle: "Pink Floyd", subTitle: "《Wish You Were Here》", body: "How I wish you were here", identifier: "6-2", longitude: 120.030632, latitude: 30.288121, radius: 100, notifyOnEntry: true, ontifyOnExit: true, soundName: "tmp.mp3", repeat: false)
 ```
-
+---
 #### Receives the push notification in the foreground
  - Objective-C
 ```
@@ -629,7 +630,7 @@ PushNotificationManager().locationPushNotification(withTitle: "Pink Floyd", subT
 // you can see the detail in the project named `PushNotificationManagerExample-Swift`
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {}
 ```
-
+---
 #### Receives the push notification in the background
  - Objective-C
 ```
@@ -641,7 +642,7 @@ PushNotificationManager().locationPushNotification(withTitle: "Pink Floyd", subT
 // you can see the detail in the project named `PushNotificationManagerExample-Swift`
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {}
 ```
-<hr>
+---
  
 
 ### [_View Chinese translation_][2]

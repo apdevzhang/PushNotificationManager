@@ -91,7 +91,7 @@
 <pre>
  pod 'PushNotificationManager'
 </pre>
- ![screenshot/cocoapods.png](screenshot/cocoapods.png)
+ ![screenshot/cocoapods.png](screenshot/cocoapods1.0.1.png)
  
 <a name="Examples"></a>
 ### Examples

@@ -618,7 +618,7 @@ static PushNotificationManager *_instance = nil;
 }
 
 #pragma mark - `push notification style of location,provide a customized alert sound,e.g. @"intro.mp3"` ->`定点推送,可设置自定义提示音`
--(void)locationPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier longitude:(CGFloat)longitude latitude:(CGFloat)latitude radius:(NSInteger)radius notifyOnEntry:(BOOL)notifyOnEntey notifyOnExit:(BOOL)notifyOnExit soundName:(NSString *)soundName repeat:(BOOL)repeat
+-(void)locationPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier longitude:(CGFloat)longitude latitude:(CGFloat)latitude radius:(NSInteger)radius notifyOnEntry:(BOOL)notifyOnEntry ontifyOnExit:(BOOL)notifyOnExit soundName:(NSString *)soundName repeat:(BOOL)repeat
 {
     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
     content.title = title;
@@ -635,7 +635,7 @@ static PushNotificationManager *_instance = nil;
     CLLocationCoordinate2D center = CLLocationCoordinate2DMake(longitude,latitude);
     
     CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:center radius:radius identifier:identifier];
-    region.notifyOnEntry = notifyOnEntey;
+    region.notifyOnEntry = notifyOnEntry;
     region.notifyOnExit = notifyOnExit;
     
     UNLocationNotificationTrigger *trigger = [UNLocationNotificationTrigger triggerWithRegion:region repeats:repeat];
@@ -659,9 +659,7 @@ static PushNotificationManager *_instance = nil;
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
     [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
         if (error == nil) {
-            DLog(@"the push notification identifier is :%@",request.identifier);
-            DLog(@"trigger:%@",trigger);
-            DLog(@"content:%@",content);
+            DLog(@"the push notification identifier is: %@ \n and content is:  %@ \n with trigger: %@",request.identifier,content,trigger);
         }
     }];
 }

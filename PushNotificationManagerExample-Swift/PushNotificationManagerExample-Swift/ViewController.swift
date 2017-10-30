@@ -74,8 +74,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     //MARK:UITbleviewDelegate,UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 6
-    }
-    
+    }    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 2
@@ -92,11 +91,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
         return 0
     }
-
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
-    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
             return " 普通类型"
@@ -113,7 +110,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
         return ""
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
@@ -139,8 +135,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
 
         return cell
-    }
-    
+    } 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {        
         switch indexPath.section {
         case 0: // "普通类型" = "PushNotificationStyleNormal";
@@ -255,7 +250,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
         completionHandler([.sound,.alert,.badge])
     }
-
     //MARK:iOS10->后台点击通知的代理方法
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
@@ -280,7 +274,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
         completionHandler()
     }
-    
     //MARK:iOS10以下
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
         print("iOS10收到新推送消息:\(userInfo)")
@@ -301,15 +294,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         print("当前经度:\(currentLocation.coordinate.longitude)" + "\n" + "当前纬度:\(currentLocation.coordinate.latitude)")
     }
- 
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         print("离开监控区域")
     }
- 
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         print("进入监控区域")
     }
- 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("定位出错\(error)")
     }

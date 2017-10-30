@@ -53,7 +53,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     //MARK:UI
     func initUI() {
-        
         _tableView = UITableView.init(frame:CGRect.init(x:0,y:0,width:self.view.frame.size.width,height:self.view.frame.size.height),style:UITableViewStyle.plain)
         _tableView.delegate = self
         _tableView.dataSource = self
@@ -146,9 +145,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         switch indexPath.section {
         case 0: // "普通类型" = "PushNotificationStyleNormal";
             if indexPath.row == 0 {
-               PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "1-1", timeInterval: 3, repeat: false)
+                PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "1-1", timeInterval: 3, repeat: false)
             } else if indexPath.row == 1 {
-                 PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "1-2", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
+                PushNotificationManager().normalPushNotification(withTitle: "John Winston Lennon", subTitle: "《Imagine》", body: "You may say that I'm a dreamer, but I'm not the only one", identifier: "1-2", soundName: "tmp.mp3", timeInterval: 3, repeat: false)
             }
         case 1: //"图像类型" = "PushNotificationStyleGraphics";
             if indexPath.row == 0 {
@@ -302,12 +301,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         print("当前经度:\(currentLocation.coordinate.longitude)" + "\n" + "当前纬度:\(currentLocation.coordinate.latitude)")
     }
+ 
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         print("离开监控区域")
     }
+ 
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         print("进入监控区域")
     }
+ 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("定位出错\(error)")
     }

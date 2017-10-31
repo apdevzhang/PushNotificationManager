@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PushNotificationManager"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Convenient and comprehensive api for push notification"
   s.description  = <<-DESC
 Convenient and comprehensive api for push notification,provide 6 stems and 20 branchs' function,offer examples written by Objective-C and Swift respectively

@@ -122,11 +122,11 @@
  */
 -(void)timingPushNotificationWithTitle:(NSString *)title subTitle:(NSString *)subTitle body:(NSString *)body identifier:(NSString *)identifier year:(NSString *)year month:(NSString *)month day:(NSString *)day hour:(NSString *)hour minute:(NSString *)minute second:(NSString *)second soundName:(NSString *)soundName timeInterval:(NSInteger)timeInterval repeat:(BOOL)repeat;
 
-//    NSDictionary *dict = @{@"weekday":@1, //the `1` said Sunday in China ->`1`等于中国周日
+//    NSDictionary *dict = @{@"weekday":@1, //the `1` said Monday in China ->`1`等于中国周一,而不是美国周日
 //                           @"hour":@2,
 //                           @"minute":@20,
 //                           @"second":@10
-//                           }; // this meaning the fire date is "2:20:10 Sunday" ->字典的内容表示"周日 2:20:10"
+//                           }; // this meaning the fire date is "2:20:10 Sunday" ->字典的内容表示中国时间"周一 2:20:10"
 /**!
  * @brief `push notification style of timing,the fire date is included in a dictionary,the fireDate usage is as follows` ->`定时推送,推送时间包含在字典内,字典使用方法如下`
  */

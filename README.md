@@ -441,11 +441,11 @@ PushNotificationManager().timingPushNotification(withTitle: "王菲", subTitle: 
 ```
 ---
 ```
-//    NSDictionary *dict = @{@"weekday":@1, //the `1` said Sunday in China ->`1`等于中国周日
-//                           @"hour":@2,
+//    NSDictionary *dict = @{@"weekday":@1, //the `1` said Monday in China ->`1`等于中国周一
+//                           @"hour":@2,
 //                           @"minute":@20,
 //                           @"second":@10
-//                           }; // this meaning the fire date is "2:20:10 Sunday" ->字典的内容表示"周日 2:20:10"
+//                           }; // this meaning the fire date is "2:20:10 Monday" ->字典的内容表示"周一 2:20:10"
 ```
 #### push notification style of timing,the fire date is included in a dictionary,the fireDate usage is as follows
  - function
@@ -502,10 +502,13 @@ PushNotificationManager().timingPushNotification(withTitle: "Bang Gang", subTitl
 ```
  - Objective-C usage
 ```
-                UNTextInputNotificationAction *action1 = [UNTextInputNotificationAction actionWithIdentifier:@"reply" title:NSLocalizedString(@"评论", nil) options:UNNotificationActionOptionNone textInputButtonTitle:NSLocalizedString(@"发送", nil) textInputPlaceholder:NSLocalizedString(@"说点什么", nil)]; //reply action
-                UNNotificationAction *action2 = [UNNotificationAction actionWithIdentifier:@"enter" title:NSLocalizedString(@"进入", nil) options:UNNotificationActionOptionForeground]; //enter action
-                UNNotificationAction *action3 = [UNNotificationAction actionWithIdentifier:@"cancel" title:NSLocalizedString(@"销毁", nil) options:UNNotificationActionOptionDestructive]; //cancel action
-                [[PushNotificationManager sharedInstance]interactivePushNotificationWithTitle:@"Bang Gang" subTitle:@"《Forever Now》" body:@"You can see her in the distance\n Where she walks alone\n Then you follow her direction\n To your second home" identifier:@"5-1" identifierArray:@[@"reply",@"enter",@"cancel"] actionArray:@[action1,action2,action3] timeInterval:3 repeat:NO];
+UNTextInputNotificationAction *action1 = [UNTextInputNotificationAction actionWithIdentifier:@"reply" title:NSLocalizedString(@"评论", nil) options:UNNotificationActionOptionNone textInputButtonTitle:NSLocalizedString(@"发送", nil) textInputPlaceholder:NSLocalizedString(@"说点什么", nil)]; //reply action
+
+UNNotificationAction *action2 = [UNNotificationAction actionWithIdentifier:@"enter" title:NSLocalizedString(@"进入", nil) options:UNNotificationActionOptionForeground]; //enter action
+
+UNNotificationAction *action3 = [UNNotificationAction actionWithIdentifier:@"cancel" title:NSLocalizedString(@"销毁", nil) options:UNNotificationActionOptionDestructive]; //cancel action
+
+[[PushNotificationManager sharedInstance]interactivePushNotificationWithTitle:@"Bang Gang" subTitle:@"《Forever Now》" body:@"You can see her in the distance\n Where she walks alone\n Then you follow her direction\n To your second home" identifier:@"5-1" identifierArray:@[@"reply",@"enter",@"cancel"] actionArray:@[action1,action2,action3] timeInterval:3 repeat:NO];
 ```
  - Swift usage
 ```
@@ -544,10 +547,13 @@ PushNotificationManager().interactivePushNotification(withTitle: "Bang Gang", su
 ```
  - Objective-C usage
 ```
-                 UNTextInputNotificationAction *action1 = [UNTextInputNotificationAction actionWithIdentifier:@"reply" title:NSLocalizedString(@"评论", nil) options:UNNotificationActionOptionNone textInputButtonTitle:NSLocalizedString(@"发送", nil) textInputPlaceholder:NSLocalizedString(@"说点什么", nil)]; //reply action
-                UNNotificationAction *action2 = [UNNotificationAction actionWithIdentifier:@"enter" title:NSLocalizedString(@"进入", nil) options:UNNotificationActionOptionForeground]; //enter action
-                UNNotificationAction *action3 = [UNNotificationAction actionWithIdentifier:@"cancel" title:NSLocalizedString(@"销毁", nil) options:UNNotificationActionOptionDestructive]; //cancel action
-                [[PushNotificationManager sharedInstance]interactivePushNotificationWithTitle:@"Bang Gang" subTitle:@"《Forever Now》" body:@"You can see her in the distance\n Where she walks alone\n Then you follow her direction\n To your second home" identifier:@"5-2" identifierArray:@[@"reply",@"enter",@"cancel"] actionArray:@[action1,action2,action3] soundName:@"tmp.mp3" timeInterval:3 repeat:NO];
+UNTextInputNotificationAction *action1 = [UNTextInputNotificationAction actionWithIdentifier:@"reply" title:NSLocalizedString(@"评论", nil) options:UNNotificationActionOptionNone textInputButtonTitle:NSLocalizedString(@"发送", nil) textInputPlaceholder:NSLocalizedString(@"说点什么", nil)]; //reply action
+
+UNNotificationAction *action2 = [UNNotificationAction actionWithIdentifier:@"enter" title:NSLocalizedString(@"进入", nil) options:UNNotificationActionOptionForeground]; //enter action
+
+UNNotificationAction *action3 = [UNNotificationAction actionWithIdentifier:@"cancel" title:NSLocalizedString(@"销毁", nil) options:UNNotificationActionOptionDestructive]; //cancel action
+
+[[PushNotificationManager sharedInstance]interactivePushNotificationWithTitle:@"Bang Gang" subTitle:@"《Forever Now》" body:@"You can see her in the distance\n Where she walks alone\n Then you follow her direction\n To your second home" identifier:@"5-2" identifierArray:@[@"reply",@"enter",@"cancel"] actionArray:@[action1,action2,action3] soundName:@"tmp.mp3" timeInterval:3 repeat:NO];
 ```
  - Swift usage
 ```

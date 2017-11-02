@@ -126,7 +126,7 @@
 //                           @"hour":@2,
 //                           @"minute":@20,
 //                           @"second":@10
-//                           }; // this meaning the fire date is "2:20:10 Sunday" ->字典的内容表示中国时间"周一 2:20:10"
+//                           }; // this meaning the fire date is "2:20:10 Monday" ->字典的内容表示中国时间"周一 2:20:10"
 /**!
  * @brief `push notification style of timing,the fire date is included in a dictionary,the fireDate usage is as follows` ->`定时推送,推送时间包含在字典内,字典使用方法如下`
  */

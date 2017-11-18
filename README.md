@@ -648,12 +648,8 @@ PushNotificationManager().locationPushNotification(withTitle: "Pink Floyd", subT
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {}
 ```
 ---
- 
-
-### [_View Chinese translation_][2]
 
 
 
 [1]: https://github.com/GREENBANYAN/PushNotificationManager/blob/master/LICENSE "MIT License"
-[2]: http://www.jianshu.com/p/6b02e9cd881a "简书"
 

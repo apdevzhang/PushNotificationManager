@@ -336,10 +336,11 @@
 {
     NSString *identifier = notification.request.identifier;
     NSString *categoryIdentifier = notification.request.content.categoryIdentifier;
-//    NSDictionary * userInfo = notification.request.content.userInfo;
+    NSDictionary * userInfo = notification.request.content.userInfo;
     if ([notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
         //remote notification,do nothing
     }else{
+        DLog(@"%@",notification.request.content);
         //reminder
         if (identifier) {
             [TSMessage showNotificationWithTitle:[NSString stringWithFormat:@"identifier:%@",identifier] type:TSMessageNotificationTypeMessage];
@@ -353,7 +354,8 @@
 #pragma mark - `Receives the push notification in the background`->`应用在后台收到推送的处理方法`
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler
 {
-//   NSDictionary * userInfo = response.notification.request.content.userInfo;
+   NSDictionary * userInfo = response.notification.request.content.userInfo;
+    DLog(@"%@",userInfo);
     
     NSString *identifier =  response.notification.request.identifier;
     NSString *categoryIdentifier = response.notification.request.content.categoryIdentifier;

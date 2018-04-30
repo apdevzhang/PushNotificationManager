@@ -11,7 +11,7 @@
 #import "PushNotificationManager.h"
 #import <TSMessage.h>
 
-@interface AppDelegate () <UNUserNotificationCenterDelegate, UNUserNotificationCenterDelegate>
+@interface AppDelegate () <UNUserNotificationCenterDelegate>
 @end
 
 @implementation AppDelegate

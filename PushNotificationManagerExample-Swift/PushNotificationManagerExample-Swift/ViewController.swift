@@ -180,7 +180,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             }
         case 4: //"交互类型" = "PushNotificationStyleInteractive";
             if indexPath.row == 0 {
-                
+                 
                 let inputAction = UNTextInputNotificationAction(
                     identifier: "reply",
                     title: "评论",

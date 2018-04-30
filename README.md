@@ -68,19 +68,19 @@
 ### Preview
  mainpage screenshot1  | mainpage screenshot2 | mainpage screenshot3 | mainpage screenshot4
  -----|-----|-----|-----
- ![Screenshot/screenshot1.png](Screenshot/screenshot1.png) |  ![Screenshot/screenshot2.png](Screenshot/screenshot2.png) |  ![Screenshot/screenshot3.png](Screenshot/screenshot3.png) |  ![Screenshot/screenshot4.png](Screenshot/screenshot4.png)
+ ![screenshot/screenshot1.png](screenshot/screenshot1.png) |  ![screenshot/screenshot2.png](screenshot/screenshot2.png) |  ![screenshot/screenshot3.png](screenshot/screenshot3.png) |  ![screenshot/screenshot4.png](screenshot/screenshot4.png)
  
  push notification style of normal | push notification style of graphics | push notification style of video
  -----|-----|-----
-![Screenshot/screenshot6.png](Screenshot/screenshot6.png) | ![Screenshot/screenshot7.png](Screenshot/screenshot7.png) | ![Screenshot/screenshot9.png](Screenshot/screenshot9.png) 
+![screenshot/screenshot6.png](screenshot/screenshot6.png) | ![screenshot/screenshot7.png](screenshot/screenshot7.png) | ![screenshot/screenshot9.png](screenshot/screenshot9.png) 
 
  interactive setp1 | interactive setp2 | interactive setp3
  -----|-----|-----
- ![Screenshot/screenshot11.png](Screenshot/screenshot11.png) | ![Screenshot/screenshot12.png](Screenshot/screenshot12.png) |  ![Screenshot/screenshot13.png](Screenshot/screenshot13.png)
+ ![screenshot/screenshot11.png](screenshot/screenshot11.png) | ![screenshot/screenshot12.png](screenshot/screenshot12.png) |  ![screenshot/screenshot13.png](screenshot/screenshot13.png)
  
   interactive gif | video gif 
  -----|-----
-  ![Screenshot/gif1.gif](Screenshot/gif1.gif) | ![Screenshot/gif2.gif](Screenshot/gif2.gif) 
+  ![screenshot/gif1.gif](screenshot/gif1.gif) | ![screenshot/gif2.gif](screenshot/gif2.gif) 
 
 <a name="License"></a>
 ### License
@@ -91,7 +91,7 @@
 <pre>
  pod 'PushNotificationManager'
 </pre>
- ![Screenshot/cocoapods.png](Screenshot/cocoapods1.0.2.png)
+ ![screenshot/cocoapods.png](screenshot/cocoapods1.0.3.png)
  
 <a name="Examples"></a>
 ### Examples

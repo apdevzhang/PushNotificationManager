@@ -8,66 +8,101 @@
 
 #import "AppDelegate.h"
 #import <UserNotifications/UserNotifications.h>
+#import "PushNotificationManager.h"
+#import <TSMessage.h>
 
-#define kSystemVersion [[UIDevice currentDevice].systemVersion floatValue]
-
-@interface AppDelegate ()<UNUserNotificationCenterDelegate>
+@interface AppDelegate () <UNUserNotificationCenterDelegate, UNUserNotificationCenterDelegate>
 @end
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [[UINavigationBar appearance]setBarTintColor:[UIColor transformColorToHex:@"#009966"]];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    if (kSystemVersion >= 10.0) {
+    if (@available(iOS 10.0, *)) {
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
         center.delegate = self;
         UNAuthorizationOptions types=UNAuthorizationOptionBadge|UNAuthorizationOptionAlert|UNAuthorizationOptionSound;
         [center requestAuthorizationWithOptions:types completionHandler:^(BOOL granted, NSError * _Nullable error) {
             if (granted) {
-            [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
-                
-            }];
+                [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
+                    //
+                }];
             } else {
-            [[UIApplication sharedApplication]openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@""} completionHandler:^(BOOL success) { }];
+                [[UIApplication sharedApplication]openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@""} completionHandler:^(BOOL success) { }];
             }
         }];
-    }else if (kSystemVersion >= 8.0){
+    } else {
 #pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+#pragma clang diagnostic ignored"-Wdeprecated-declarations"
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge categories:nil]];
-#pragma clang diagnostic pop
     }
+  #pragma clang diagnostic pop
+    
+    [[PushNotificationManager sharedInstance] clearNotificationBadges];
     
     return YES;
 }
 
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+// iOS8 收到推送
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    DLog(@"%@", notification.userInfo);
+    DLog(@"category:%@", notification.category);
 }
 
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+#pragma mark - iOS 10 `Receives the push notification in the foreground`->`前台收到推送`
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler
+{
+    NSString *identifier = notification.request.identifier;
+    NSString *categoryIdentifier = notification.request.content.categoryIdentifier;
+    NSDictionary * userInfo = notification.request.content.userInfo;
+    if ([notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
+        //remote notification,do nothing
+    }else{
+        DLog(@"%@",notification.request.content);
+        //reminder
+        if (identifier) {
+            [TSMessage showNotificationWithTitle:[NSString stringWithFormat:@"identifier:%@",identifier] type:TSMessageNotificationTypeMessage];
+        }
+        if (categoryIdentifier) {
+            [TSMessage showNotificationWithTitle:[NSString stringWithFormat:@"categoryIdentifier:%@",categoryIdentifier] type:TSMessageNotificationTypeMessage];
+        }
+    }
+    completionHandler(UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound|UNNotificationPresentationOptionAlert);
 }
 
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-}
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+#pragma mark - iOS 10 `Receives the push notification in the background`->`应用在后台收到推送的处理方法`
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler {
+    NSDictionary * userInfo = response.notification.request.content.userInfo;
+    DLog(@"%@",userInfo);
+    
+    NSString *identifier =  response.notification.request.identifier;
+    NSString *categoryIdentifier = response.notification.request.content.categoryIdentifier;
+    DLog(@"identifier:%@\n,categoryIdentifier:%@",identifier,categoryIdentifier);
+    
+    if ([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
+        //remote notification,do nothing
+    }else{
+        if ([identifier isEqualToString:@"5-2"]) {
+            if ([response.actionIdentifier isEqualToString:@"reply"]) {
+                UNTextInputNotificationResponse *textResponse = (UNTextInputNotificationResponse *)response;
+                DLog(@"%@",textResponse.userText);
+                [TSMessage showNotificationWithTitle:[NSString stringWithFormat:@"%@",textResponse.userText] type:TSMessageNotificationTypeMessage];
+            }else if ([response.actionIdentifier isEqualToString:@"enter"]){
+                [TSMessage showNotificationWithTitle:@"进入" type:TSMessageNotificationTypeMessage];
+            }else if ([response.actionIdentifier isEqualToString:@"cancel"]){
+                [TSMessage showNotificationWithTitle:@"取消" type:TSMessageNotificationTypeMessage];
+            }
+        }
+        
+        //reminder
+        if (identifier) {
+            [TSMessage showNotificationWithTitle:[NSString stringWithFormat:@"identifier:%@",identifier] type:TSMessageNotificationTypeMessage];
+        }
+        if (categoryIdentifier) {
+            [TSMessage showNotificationWithTitle:[NSString stringWithFormat:@"categoryIdentifier:%@",categoryIdentifier] type:TSMessageNotificationTypeMessage];
+        }
+    }
+    completionHandler();
 }
 
 @end

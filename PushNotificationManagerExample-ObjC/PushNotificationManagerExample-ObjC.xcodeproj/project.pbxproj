@@ -20,6 +20,7 @@
 		2336EA931F7FFE5C000CE5FC /* PopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2336EA901F7FFE5C000CE5FC /* PopTableViewCell.m */; };
 		2336EA941F7FFE5C000CE5FC /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2336EA921F7FFE5C000CE5FC /* UIColor+Hex.m */; };
 		2336EA981F800750000CE5FC /* Raining.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2336EA971F800750000CE5FC /* Raining.mp4 */; };
+		2375973B20970E150040F0A6 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2375973A20970E150040F0A6 /* UserNotifications.framework */; };
 		2389705C1F7BF9C900B56F4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2389705E1F7BF9C900B56F4A /* InfoPlist.strings */; };
 		238970631F7BFBC100B56F4A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 238970651F7BFBC100B56F4A /* Localizable.strings */; };
 		2389706F1F7EA01300B56F4A /* Graphics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2389706D1F7EA01300B56F4A /* Graphics.jpg */; };
@@ -72,6 +73,7 @@
 		2336EA911F7FFE5C000CE5FC /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		2336EA921F7FFE5C000CE5FC /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		2336EA971F800750000CE5FC /* Raining.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Raining.mp4; sourceTree = "<group>"; };
+		2375973A20970E150040F0A6 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		238970561F7BF94D00B56F4A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		238970571F7BF94D00B56F4A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		238970581F7BF95900B56F4A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2375973B20970E150040F0A6 /* UserNotifications.framework in Frameworks */,
 				417A5E2160D19F5F1C462C06 /* libPods-PushNotificationManagerExample-ObjC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +234,7 @@
 		C9B9E260BF2FAE1C32FBB4F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2375973A20970E150040F0A6 /* UserNotifications.framework */,
 				46B0AC84FBA014D47179B92B /* libPods-PushNotificationManagerExample-ObjC.a */,
 				ACC4F9A9CBA563BDF3005BCC /* libPods-PushNotificationManagerExample-ObjCTests.a */,
 				F7F09B48A7E8BE430B4F5CCA /* libPods-PushNotificationManagerExample-ObjCUITests.a */,
@@ -309,7 +313,7 @@
 		232932B71F7A80260012FF0B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = GREENBANYAN;
 				TargetAttributes = {
 					232932BE1F7A80260012FF0B = {
@@ -630,6 +634,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -637,6 +642,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -686,6 +692,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -693,6 +700,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -730,6 +738,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PushNotificationManagerExample-ObjC/PushNotificationManagerExample-ObjC.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J4V9V4QN3V;
+				ENABLE_BITCODE = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushNotificationManagerExample-ObjC/ObjC.pch";
@@ -751,6 +760,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PushNotificationManagerExample-ObjC/PushNotificationManagerExample-ObjC.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J4V9V4QN3V;
+				ENABLE_BITCODE = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushNotificationManagerExample-ObjC/ObjC.pch";

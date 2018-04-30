@@ -29,7 +29,6 @@
 #import "Masonry.h"
 #import <MBProgressHUD.h>
 #import "UIColor+Hex.h"
-
 #import "PopTableViewCell.h"
 #import <pop/POP.h>
 

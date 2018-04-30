@@ -17,7 +17,7 @@
    the example for API usage written by Objective-C
 - [PushNotificationManagerExample-Swift](./PushNotificationManagerExample-Swift)<br/>
    the example for API usage written by Swift
-- [Screenshot](./Screenshot)<br/>
+- [screenshot](./screenshot)<br/>
    project operation screenshot 
 
 ## Catalog
@@ -99,25 +99,25 @@
 #### Apply the push notification permission
  - Objective-C
 ```
-    if (kSystemVersion >= 10.0) {
+    if (@available(iOS 10.0, *)) {
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
         center.delegate = self;
         UNAuthorizationOptions types=UNAuthorizationOptionBadge|UNAuthorizationOptionAlert|UNAuthorizationOptionSound;
         [center requestAuthorizationWithOptions:types completionHandler:^(BOOL granted, NSError * _Nullable error) {
             if (granted) {
-            [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
-                
-            }];
+                [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
+                    //
+                }];
             } else {
-            [[UIApplication sharedApplication]openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@""} completionHandler:^(BOOL success) { }];
+                [[UIApplication sharedApplication]openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@""} completionHandler:^(BOOL success) { }];
             }
         }];
-    }else if (kSystemVersion >= 8.0){
+    } else {
 #pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+#pragma clang diagnostic ignored"-Wdeprecated-declarations"
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge categories:nil]];
-#pragma clang diagnostic pop
     }
+  #pragma clang diagnostic pop
 ```
 - Swift
 ```
